@@ -1,0 +1,6 @@
+framework module Pods_StockeAR {
+  umbrella header "Pods-StockeAR-umbrella.h"
+
+  export *
+  module * { export * }
+}

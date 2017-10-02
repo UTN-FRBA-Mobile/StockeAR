@@ -12,6 +12,7 @@
 		24E8A6EF1F79BA0C00280D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */; };
 		24E8A6F21F79BA0C00280D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6F01F79BA0C00280D55 /* LaunchScreen.storyboard */; };
 		24E8A6FA1F79BA3F00280D55 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6F91F79BA3F00280D55 /* ViewController.xib */; };
+		7DDED13FD8B6C79AA5A090C0 /* Pods_StockeAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5745E3030221367F199E7DA /* Pods_StockeAR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		24E8A6F11F79BA0C00280D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24E8A6F31F79BA0C00280D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24E8A6F91F79BA3F00280D55 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		79BDB6F83ADCC7E754AA3F45 /* Pods-StockeAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockeAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR.release.xcconfig"; sourceTree = "<group>"; };
+		949A43B3E8EDB7824FF44138 /* Pods-StockeAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockeAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR.debug.xcconfig"; sourceTree = "<group>"; };
+		E5745E3030221367F199E7DA /* Pods_StockeAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockeAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDED13FD8B6C79AA5A090C0 /* Pods_StockeAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				24E8A6E61F79BA0C00280D55 /* StockeAR */,
 				24E8A6E51F79BA0C00280D55 /* Products */,
+				B47D04161990A59C189E7D40 /* Pods */,
+				6B08FD8EE76F0AB2A76BFF3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = StockeAR;
 			sourceTree = "<group>";
 		};
+		6B08FD8EE76F0AB2A76BFF3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5745E3030221367F199E7DA /* Pods_StockeAR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B47D04161990A59C189E7D40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				949A43B3E8EDB7824FF44138 /* Pods-StockeAR.debug.xcconfig */,
+				79BDB6F83ADCC7E754AA3F45 /* Pods-StockeAR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24E8A6F61F79BA0C00280D55 /* Build configuration list for PBXNativeTarget "StockeAR" */;
 			buildPhases = (
+				6349FF4A6D361A2463AC8E86 /* [CP] Check Pods Manifest.lock */,
 				24E8A6E01F79BA0C00280D55 /* Sources */,
 				24E8A6E11F79BA0C00280D55 /* Frameworks */,
 				24E8A6E21F79BA0C00280D55 /* Resources */,
+				C58615971791C85DD2C910CD /* [CP] Embed Pods Frameworks */,
+				93DFD355B3C9B30A19CE800F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6349FF4A6D361A2463AC8E86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockeAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93DFD355B3C9B30A19CE800F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C58615971791C85DD2C910CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24E8A6E01F79BA0C00280D55 /* Sources */ = {
@@ -264,6 +345,7 @@
 		};
 		24E8A6F71F79BA0C00280D55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949A43B3E8EDB7824FF44138 /* Pods-StockeAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -278,6 +360,7 @@
 		};
 		24E8A6F81F79BA0C00280D55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BDB6F83ADCC7E754AA3F45 /* Pods-StockeAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
