@@ -6,5 +6,6 @@ target 'StockeAR' do
   use_frameworks!
 
   # Pods for StockeAR
+  pod 'QRCodeReaderViewController'
 
 end
