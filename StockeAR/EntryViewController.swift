@@ -1,14 +1,14 @@
 import UIKit
 import QRCodeReaderViewController
 
-class ViewController: UIViewController, QRCodeReaderDelegate {
+class EntryViewController: UIViewController, QRCodeReaderDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func qrScanAction(_ sender: Any) {
-        let reader = QRCodeReader(metadataObjectTypes: [AVMetadataObject.ObjectType.qr])
+        let reader = QRCodeReader(metadataObjectTypes: [AVMetadataObject.ObjectType.dataMatrix])
         let qrCodeReaderVC = QRCodeReaderViewController(cancelButtonTitle: "Cancelar", codeReader: reader, startScanningAtLoad: true, showSwitchCameraButton: true, showTorchButton: true)
         qrCodeReaderVC.modalPresentationStyle = UIModalPresentationStyle.formSheet
         qrCodeReaderVC.delegate = self

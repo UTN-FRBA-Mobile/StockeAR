@@ -7,22 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		246CB1FC1F9D3A0B00053F64 /* EgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB1FA1F9D3A0B00053F64 /* EgressViewController.swift */; };
+		246CB1FD1F9D3A0B00053F64 /* EgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246CB1FB1F9D3A0B00053F64 /* EgressViewController.xib */; };
+		246CB2001F9D3A3D00053F64 /* MovementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB1FE1F9D3A3D00053F64 /* MovementsViewController.swift */; };
+		246CB2011F9D3A3D00053F64 /* MovementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246CB1FF1F9D3A3D00053F64 /* MovementsViewController.xib */; };
+		246CB2041F9D3D3100053F64 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB2021F9D3D3100053F64 /* StockViewController.swift */; };
+		246CB2051F9D3D3100053F64 /* StockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246CB2031F9D3D3100053F64 /* StockViewController.xib */; };
 		24E8A6E81F79BA0C00280D55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */; };
-		24E8A6EA1F79BA0C00280D55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8A6E91F79BA0C00280D55 /* ViewController.swift */; };
+		24E8A6EA1F79BA0C00280D55 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8A6E91F79BA0C00280D55 /* EntryViewController.swift */; };
 		24E8A6EF1F79BA0C00280D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */; };
 		24E8A6F21F79BA0C00280D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6F01F79BA0C00280D55 /* LaunchScreen.storyboard */; };
-		24E8A6FA1F79BA3F00280D55 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6F91F79BA3F00280D55 /* ViewController.xib */; };
+		24E8A6FA1F79BA3F00280D55 /* EntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6F91F79BA3F00280D55 /* EntryViewController.xib */; };
 		7DDED13FD8B6C79AA5A090C0 /* Pods_StockeAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5745E3030221367F199E7DA /* Pods_StockeAR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		246CB1FA1F9D3A0B00053F64 /* EgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgressViewController.swift; sourceTree = "<group>"; };
+		246CB1FB1F9D3A0B00053F64 /* EgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EgressViewController.xib; sourceTree = "<group>"; };
+		246CB1FE1F9D3A3D00053F64 /* MovementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsViewController.swift; sourceTree = "<group>"; };
+		246CB1FF1F9D3A3D00053F64 /* MovementsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovementsViewController.xib; sourceTree = "<group>"; };
+		246CB2021F9D3D3100053F64 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		246CB2031F9D3D3100053F64 /* StockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockViewController.xib; sourceTree = "<group>"; };
 		24E8A6E41F79BA0C00280D55 /* StockeAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockeAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24E8A6E91F79BA0C00280D55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24E8A6E91F79BA0C00280D55 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24E8A6F11F79BA0C00280D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24E8A6F31F79BA0C00280D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24E8A6F91F79BA3F00280D55 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		24E8A6F91F79BA3F00280D55 /* EntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryViewController.xib; sourceTree = "<group>"; };
 		79BDB6F83ADCC7E754AA3F45 /* Pods-StockeAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockeAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR.release.xcconfig"; sourceTree = "<group>"; };
 		949A43B3E8EDB7824FF44138 /* Pods-StockeAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockeAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR.debug.xcconfig"; sourceTree = "<group>"; };
 		E5745E3030221367F199E7DA /* Pods_StockeAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockeAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */,
-				24E8A6E91F79BA0C00280D55 /* ViewController.swift */,
-				24E8A6F91F79BA3F00280D55 /* ViewController.xib */,
+				246CB2021F9D3D3100053F64 /* StockViewController.swift */,
+				246CB2031F9D3D3100053F64 /* StockViewController.xib */,
+				24E8A6E91F79BA0C00280D55 /* EntryViewController.swift */,
+				24E8A6F91F79BA3F00280D55 /* EntryViewController.xib */,
+				246CB1FA1F9D3A0B00053F64 /* EgressViewController.swift */,
+				246CB1FB1F9D3A0B00053F64 /* EgressViewController.xib */,
+				246CB1FE1F9D3A3D00053F64 /* MovementsViewController.swift */,
+				246CB1FF1F9D3A3D00053F64 /* MovementsViewController.xib */,
 				24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */,
 				24E8A6F01F79BA0C00280D55 /* LaunchScreen.storyboard */,
 				24E8A6F31F79BA0C00280D55 /* Info.plist */,
@@ -150,9 +168,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				246CB2011F9D3A3D00053F64 /* MovementsViewController.xib in Resources */,
 				24E8A6F21F79BA0C00280D55 /* LaunchScreen.storyboard in Resources */,
-				24E8A6FA1F79BA3F00280D55 /* ViewController.xib in Resources */,
+				246CB1FD1F9D3A0B00053F64 /* EgressViewController.xib in Resources */,
+				24E8A6FA1F79BA3F00280D55 /* EntryViewController.xib in Resources */,
 				24E8A6EF1F79BA0C00280D55 /* Assets.xcassets in Resources */,
+				246CB2051F9D3D3100053F64 /* StockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,8 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E8A6EA1F79BA0C00280D55 /* ViewController.swift in Sources */,
+				24E8A6EA1F79BA0C00280D55 /* EntryViewController.swift in Sources */,
+				246CB2001F9D3A3D00053F64 /* MovementsViewController.swift in Sources */,
+				246CB1FC1F9D3A0B00053F64 /* EgressViewController.swift in Sources */,
 				24E8A6E81F79BA0C00280D55 /* AppDelegate.swift in Sources */,
+				246CB2041F9D3D3100053F64 /* StockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

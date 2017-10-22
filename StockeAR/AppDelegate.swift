@@ -7,20 +7,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        let stockNavigationController = UINavigationController()
+        let stockViewController = StockViewController(nibName:"StockViewController", bundle: nil)
+        stockNavigationController.title = "Stock"
+        stockNavigationController.tabBarItem.image = UIImage(named:"stock")
+        stockNavigationController.setViewControllers([stockViewController], animated: true)
+        
         let entryNavigationController = UINavigationController()
+        let entryViewController = EntryViewController(nibName:"EntryViewController", bundle: nil)
         entryNavigationController.title = "Ingresos"
-        entryNavigationController.setViewControllers([ViewController()], animated: true)
+        entryNavigationController.tabBarItem.image = UIImage(named:"entry")
+        entryNavigationController.setViewControllers([entryViewController], animated: true)
         
         let egressNavigationController = UINavigationController()
+        let egressViewController = EgressViewController(nibName:"EgressViewController", bundle: nil)
         egressNavigationController.title = "Egresos"
-        egressNavigationController.setViewControllers([ViewController()], animated: true)
+        egressNavigationController.tabBarItem.image = UIImage(named:"egress")
+        egressNavigationController.setViewControllers([egressViewController], animated: true)
         
         let movementsNavigationController = UINavigationController()
+        let movementsViewController = MovementsViewController(nibName:"MovementsViewController", bundle: nil)
         movementsNavigationController.title = "Movimientos"
-        movementsNavigationController.setViewControllers([ViewController()], animated: true)
+        movementsNavigationController.tabBarItem.image = UIImage(named:"movement")
+        movementsNavigationController.setViewControllers([movementsViewController], animated: true)
         
         let tabBarController = UITabBarController()
-        tabBarController.setViewControllers([entryNavigationController, egressNavigationController, movementsNavigationController], animated: true)
+        tabBarController.setViewControllers([stockNavigationController, entryNavigationController, egressNavigationController, movementsNavigationController], animated: true)
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.rootViewController = tabBarController
