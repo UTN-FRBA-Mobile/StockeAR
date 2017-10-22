@@ -6,6 +6,7 @@ target 'StockeAR' do
   use_frameworks!
 
   pod 'QRCodeReaderViewController'
-  pod 'Alamofire', '~> 4.4'
+  pod 'Alamofire'
+  pod 'SVProgressHUD'
 
 end

@@ -1,13 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StockViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StockViewController" customModule="StockeAR" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="hIT-o6-Ikn" id="qbt-6t-2r3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +19,31 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="x8p-Jw-n9o">
+                    <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIT-o6-Ikn">
+                    <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Eas-oN-9EU"/>
+                        <outlet property="delegate" destination="-1" id="Ey9-A4-wN0"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hIT-o6-Ikn" secondAttribute="trailing" id="9VF-5U-wKi"/>
+                <constraint firstAttribute="bottom" secondItem="hIT-o6-Ikn" secondAttribute="bottom" id="GEj-ua-g8h"/>
+                <constraint firstAttribute="trailing" secondItem="x8p-Jw-n9o" secondAttribute="trailing" id="I87-5Q-6kS"/>
+                <constraint firstItem="x8p-Jw-n9o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="QeL-P0-hZY"/>
+                <constraint firstItem="hIT-o6-Ikn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aSL-3x-y0o"/>
+                <constraint firstItem="x8p-Jw-n9o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g3U-Wk-GfJ"/>
+                <constraint firstItem="hIT-o6-Ikn" firstAttribute="top" secondItem="x8p-Jw-n9o" secondAttribute="bottom" id="stp-Rt-0Ac"/>
+            </constraints>
+            <point key="canvasLocation" x="-173" y="-1"/>
         </view>
     </objects>
 </document>
