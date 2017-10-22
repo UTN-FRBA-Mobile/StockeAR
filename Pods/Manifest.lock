@@ -1,12 +1,15 @@
 PODS:
+  - Alamofire (4.5.1)
   - QRCodeReaderViewController (4.0.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.4)
   - QRCodeReaderViewController
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   QRCodeReaderViewController: e8f27d035b3e72b1d4b1c61ff66458287e3be0ff
 
-PODFILE CHECKSUM: 78149bf5c0e7301a2c512ff016b3f6a30e190747
+PODFILE CHECKSUM: d09d5514f3611aad25c58a682ef7b6f78234aae4
 
 COCOAPODS: 1.3.1
