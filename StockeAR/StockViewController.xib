@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StockViewController" customModule="StockeAR" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="x8p-Jw-n9o" id="1QB-uH-tmA"/>
                 <outlet property="tableView" destination="hIT-o6-Ikn" id="qbt-6t-2r3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,9 +24,12 @@
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="x8p-Jw-n9o">
                     <rect key="frame" x="0.0" y="20" width="375" height="56"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="vdq-Ce-EFX"/>
+                    </connections>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIT-o6-Ikn">
-                    <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                    <rect key="frame" x="0.0" y="76" width="375" height="542"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Eas-oN-9EU"/>
@@ -36,14 +40,15 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="hIT-o6-Ikn" secondAttribute="trailing" id="9VF-5U-wKi"/>
-                <constraint firstAttribute="bottom" secondItem="hIT-o6-Ikn" secondAttribute="bottom" id="GEj-ua-g8h"/>
+                <constraint firstAttribute="bottom" secondItem="hIT-o6-Ikn" secondAttribute="bottom" constant="49" id="GEj-ua-g8h"/>
                 <constraint firstAttribute="trailing" secondItem="x8p-Jw-n9o" secondAttribute="trailing" id="I87-5Q-6kS"/>
                 <constraint firstItem="x8p-Jw-n9o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="QeL-P0-hZY"/>
                 <constraint firstItem="hIT-o6-Ikn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aSL-3x-y0o"/>
                 <constraint firstItem="x8p-Jw-n9o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g3U-Wk-GfJ"/>
                 <constraint firstItem="hIT-o6-Ikn" firstAttribute="top" secondItem="x8p-Jw-n9o" secondAttribute="bottom" id="stp-Rt-0Ac"/>
             </constraints>
-            <point key="canvasLocation" x="-173" y="-1"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="-173.5" y="-1.5"/>
         </view>
     </objects>
 </document>

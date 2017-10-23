@@ -1,11 +1,13 @@
 import SVProgressHUD
 import UIKit
 
-class StockViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class StockViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
-    var products: Array<Product> = []
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var searchBar: UISearchBar!
     let cellReuseIdentifier = "ProductCell"
+    var products: Array<Product> = []
+    var productsFiltered: Array<Product> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +30,20 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func reloadData(products:Array<Product>) {
-        self.products = products
+        if shouldFilter() {
+            self.productsFiltered = products
+        }
+        else {
+            self.products = products
+        }
         tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if shouldFilter() {
+            return productsFiltered.count
+        }
+        
         return products.count
     }
     
@@ -42,10 +53,20 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! ProductTableViewCell
-        let product = self.products[indexPath.row]
+        let product: Product
+        if shouldFilter() {
+            product = self.productsFiltered[indexPath.row]
+        }
+        else {
+            product = self.products[indexPath.row]
+        }
         cell.setup(product: product)
         
         return cell
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        searchBar.resignFirstResponder()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -54,6 +75,19 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == "" {
+            reloadData(products: products)
+        } else {
+            let filtered = products.filter { $0.title.contains(searchText) }
+            reloadData(products: filtered)
+        }
+    }
+    
+    func shouldFilter() -> Bool {
+        return searchBar.text != ""
     }
 
 }
