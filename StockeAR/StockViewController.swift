@@ -8,7 +8,7 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     let cellReuseIdentifier = "ProductCell"
     var products: Array<Product> = []
     var productsFiltered: Array<Product> = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
@@ -16,6 +16,7 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.register(campaignCellNib, forCellReuseIdentifier: cellReuseIdentifier)
         SVProgressHUD.show()
         loadStock()
+        loadHeader()
     }
 
     func loadStock() {
@@ -27,6 +28,11 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 print("Error")
             }
         }
+    }
+    
+    func loadHeader() {
+        let view = (Bundle.main.loadNibNamed("ProductTableHeaderView", owner: self, options: nil)![0] as? UIView)
+        tableView.tableHeaderView = view
     }
     
     func reloadData(products:Array<Product>) {
@@ -61,6 +67,12 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
             product = self.products[indexPath.row]
         }
         cell.setup(product: product)
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor.white
+        }
+        else {
+            cell.backgroundColor = UIColor.lightGray
+        }
         
         return cell
     }
@@ -74,14 +86,14 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 44
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText == "" {
             reloadData(products: products)
         } else {
-            let filtered = products.filter { $0.title.contains(searchText) }
+            let filtered = products.filter { $0.productId == searchText }
             reloadData(products: filtered)
         }
     }
