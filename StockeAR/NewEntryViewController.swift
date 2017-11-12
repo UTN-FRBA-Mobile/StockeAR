@@ -2,22 +2,33 @@ import UIKit
 import QRCodeReaderViewController
 import SVProgressHUD
 
-class NewEntryViewController: UIViewController, QRCodeReaderDelegate {
+class NewEntryViewController: UIViewController, QRCodeReaderDelegate, UIGestureRecognizerDelegate, UIScrollViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet var picker: UIPickerView!
+    @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var locationTextField: UITextField!
     @IBOutlet var unitTextField: UITextField!
     @IBOutlet var amountTextField: UITextField!
     @IBOutlet var batchTextField: UITextField!
     @IBOutlet var expirationDateTextField: UITextField!
     @IBOutlet var productCodeTextField: UITextField!
+    @IBOutlet var providerLabel: UILabel!
     var entries: Array<Entry> = []
+    var providers: Array<String> = ["Alpha1","Alpha2","Alpha3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupProviderLabel()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func setupProviderLabel() {
+        providerLabel.layer.borderColor = UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 1.0).cgColor
+        providerLabel.layer.borderWidth = 1
+        providerLabel.layer.cornerRadius = 4
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(NewEntryViewController.showPicker))
+        tap.delegate = self
+        providerLabel.addGestureRecognizer(tap)
     }
     
     @IBAction func scanProduct(_ sender: Any) {
@@ -58,16 +69,17 @@ class NewEntryViewController: UIViewController, QRCodeReaderDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func dismissKeyboard(_ sender: Any) {
+    @IBAction func dismissKeyboard() {
         amountTextField.resignFirstResponder()
         unitTextField.resignFirstResponder()
+        picker.isHidden = true
     }
     
     @IBAction func newEntry(_ sender: Any) {
         if checkForm() {
             SVProgressHUD.show()
             let product = Product(productId: productCodeTextField.text!, amount: amountTextField.text!, batch: batchTextField.text!, unit: unitTextField.text!, location: locationTextField.text!, expirationDate: expirationDateTextField.text!)
-            DataSource.shared.newEntry(product: product!) { (error) in
+            DataSource.shared.newEntry(product: product!, provider: providerLabel.text!) { (error) in
                 SVProgressHUD.dismiss()
                 if (error != nil) {
                     UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
@@ -81,7 +93,10 @@ class NewEntryViewController: UIViewController, QRCodeReaderDelegate {
         else {
             UIAlertView(title: "Error", message: "Completar todos los campos.", delegate: nil, cancelButtonTitle: "OK").show()
         }
-        
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        dismissKeyboard()
     }
     
     func checkForm() -> Bool {
@@ -90,7 +105,8 @@ class NewEntryViewController: UIViewController, QRCodeReaderDelegate {
         expirationDateTextField.text != "" &&
         amountTextField.text != "" &&
         unitTextField.text != "" &&
-        locationTextField.text != ""
+        locationTextField.text != "" &&
+        providerLabel.text != ""
     }
     
     func emptyForm() {
@@ -100,5 +116,33 @@ class NewEntryViewController: UIViewController, QRCodeReaderDelegate {
         amountTextField.text = ""
         unitTextField.text = ""
         locationTextField.text = ""
+        providerLabel.text = ""
     }
+    
+    @objc func showPicker() {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 150), animated: true)
+        picker.isHidden = false
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return providers.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return providers[row]
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let provider = providers[row]
+        providerLabel.text = provider
+        picker.isHidden = true
+        scrollView.setContentOffset(CGPoint(x: 0, y: -70), animated: true)
+    }
+    
+    
+    
 }

@@ -65,9 +65,9 @@ final class DataSource: NSObject {
         }
     }
     
-    func newEntry(product: Product, completionHandler: @escaping (Error?) -> ()) {
+    func newEntry(product: Product, provider: String, completionHandler: @escaping (Error?) -> ()) {
         let header = ["content-type" : "application/json"]
-        let parameters = ["id":product.productId,"batch":product.batch,"expiration_date":product.expirationDate,"amount":product.amount,"unit":product.unit,"location":product.location]
+        let parameters = ["id":product.productId, "batch":product.batch, "expiration_date":product.expirationDate, "amount":product.amount, "unit":product.unit, "location":product.location, "provider":provider]
         Alamofire.request(DataSource.newEntryApiUrl,
                           method: .post,
                           parameters: parameters,
