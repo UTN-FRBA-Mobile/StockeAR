@@ -12,8 +12,8 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
-        let campaignCellNib = UINib(nibName: "ProductTableViewCell", bundle: nil)
-        tableView.register(campaignCellNib, forCellReuseIdentifier: cellReuseIdentifier)
+        let productCellNib = UINib(nibName: "ProductTableViewCell", bundle: nil)
+        tableView.register(productCellNib, forCellReuseIdentifier: cellReuseIdentifier)
         SVProgressHUD.show()
         loadStock()
         loadHeader()

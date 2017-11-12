@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EntryViewController" customModule="StockeAR" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="z44-Hl-Efk" id="Fnc-0m-jiw"/>
                 <outlet property="view" destination="Bjb-kO-qCJ" id="Vz0-9v-kgB"/>
             </connections>
         </placeholder>
@@ -20,18 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txe-q2-Fjc">
-                    <rect key="frame" x="160" y="175" width="55" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Leer QR"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z44-Hl-Efk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <action selector="qrScanAction:" destination="-1" eventType="touchUpInside" id="Ax5-Nq-cyr"/>
+                        <outlet property="dataSource" destination="-1" id="Ou5-oz-cfz"/>
+                        <outlet property="delegate" destination="-1" id="XOM-FD-djl"/>
                     </connections>
-                </button>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <viewLayoutGuide key="safeArea" id="hsm-pk-EH0"/>
-            <point key="canvasLocation" x="36" y="51"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="z44-Hl-Efk" secondAttribute="trailing" id="B7o-A0-NXx"/>
+                <constraint firstItem="z44-Hl-Efk" firstAttribute="top" secondItem="Bjb-kO-qCJ" secondAttribute="top" id="T6e-cb-8Vd"/>
+                <constraint firstItem="z44-Hl-Efk" firstAttribute="leading" secondItem="Bjb-kO-qCJ" secondAttribute="leading" id="TY9-zH-nik"/>
+                <constraint firstAttribute="bottom" secondItem="z44-Hl-Efk" secondAttribute="bottom" id="Yo6-zM-B9W"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="-131.5" y="-60.5"/>
         </view>
     </objects>
 </document>

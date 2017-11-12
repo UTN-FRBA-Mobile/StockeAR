@@ -18,6 +18,12 @@
 		246CB20C1F9D58B100053F64 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB20A1F9D58B100053F64 /* ProductTableViewCell.swift */; };
 		246CB20D1F9D58B100053F64 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246CB20B1F9D58B100053F64 /* ProductTableViewCell.xib */; };
 		247D08A81FB799E000556699 /* ProductTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247D08A71FB799E000556699 /* ProductTableHeaderView.xib */; };
+		247D08AB1FB7A0F800556699 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247D08A91FB7A0F800556699 /* NewEntryViewController.swift */; };
+		247D08AC1FB7A0F800556699 /* NewEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247D08AA1FB7A0F800556699 /* NewEntryViewController.xib */; };
+		24B3F0BB1FB8F14A005FFA87 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F0BA1FB8F14A005FFA87 /* Entry.swift */; };
+		24B3F0BF1FB8F461005FFA87 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F0BC1FB8F461005FFA87 /* EntryTableViewCell.swift */; };
+		24B3F0C01FB8F461005FFA87 /* EntryTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B3F0BD1FB8F461005FFA87 /* EntryTableHeaderView.xib */; };
+		24B3F0C11FB8F461005FFA87 /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B3F0BE1FB8F461005FFA87 /* EntryTableViewCell.xib */; };
 		24E8A6E81F79BA0C00280D55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */; };
 		24E8A6EA1F79BA0C00280D55 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8A6E91F79BA0C00280D55 /* EntryViewController.swift */; };
 		24E8A6EF1F79BA0C00280D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */; };
@@ -38,6 +44,12 @@
 		246CB20A1F9D58B100053F64 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		246CB20B1F9D58B100053F64 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		247D08A71FB799E000556699 /* ProductTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableHeaderView.xib; sourceTree = "<group>"; };
+		247D08A91FB7A0F800556699 /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
+		247D08AA1FB7A0F800556699 /* NewEntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewEntryViewController.xib; sourceTree = "<group>"; };
+		24B3F0BA1FB8F14A005FFA87 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		24B3F0BC1FB8F461005FFA87 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
+		24B3F0BD1FB8F461005FFA87 /* EntryTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryTableHeaderView.xib; sourceTree = "<group>"; };
+		24B3F0BE1FB8F461005FFA87 /* EntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryTableViewCell.xib; sourceTree = "<group>"; };
 		24E8A6E41F79BA0C00280D55 /* StockeAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockeAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E8A6E91F79BA0C00280D55 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
@@ -88,15 +100,21 @@
 				246CB2031F9D3D3100053F64 /* StockViewController.xib */,
 				24E8A6E91F79BA0C00280D55 /* EntryViewController.swift */,
 				24E8A6F91F79BA3F00280D55 /* EntryViewController.xib */,
+				247D08A91FB7A0F800556699 /* NewEntryViewController.swift */,
+				247D08AA1FB7A0F800556699 /* NewEntryViewController.xib */,
 				246CB1FA1F9D3A0B00053F64 /* EgressViewController.swift */,
 				246CB1FB1F9D3A0B00053F64 /* EgressViewController.xib */,
 				246CB1FE1F9D3A3D00053F64 /* MovementsViewController.swift */,
 				246CB1FF1F9D3A3D00053F64 /* MovementsViewController.xib */,
 				246CB2061F9D4E4900053F64 /* DataSource.swift */,
 				246CB2081F9D4EAB00053F64 /* Product.swift */,
+				24B3F0BA1FB8F14A005FFA87 /* Entry.swift */,
 				246CB20A1F9D58B100053F64 /* ProductTableViewCell.swift */,
 				246CB20B1F9D58B100053F64 /* ProductTableViewCell.xib */,
 				247D08A71FB799E000556699 /* ProductTableHeaderView.xib */,
+				24B3F0BD1FB8F461005FFA87 /* EntryTableHeaderView.xib */,
+				24B3F0BC1FB8F461005FFA87 /* EntryTableViewCell.swift */,
+				24B3F0BE1FB8F461005FFA87 /* EntryTableViewCell.xib */,
 				24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */,
 				24E8A6F01F79BA0C00280D55 /* LaunchScreen.storyboard */,
 				24E8A6F31F79BA0C00280D55 /* Info.plist */,
@@ -184,13 +202,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				247D08A81FB799E000556699 /* ProductTableHeaderView.xib in Resources */,
+				24B3F0C11FB8F461005FFA87 /* EntryTableViewCell.xib in Resources */,
 				246CB2011F9D3A3D00053F64 /* MovementsViewController.xib in Resources */,
 				246CB20D1F9D58B100053F64 /* ProductTableViewCell.xib in Resources */,
+				24B3F0C01FB8F461005FFA87 /* EntryTableHeaderView.xib in Resources */,
 				24E8A6F21F79BA0C00280D55 /* LaunchScreen.storyboard in Resources */,
 				246CB1FD1F9D3A0B00053F64 /* EgressViewController.xib in Resources */,
 				24E8A6FA1F79BA3F00280D55 /* EntryViewController.xib in Resources */,
 				24E8A6EF1F79BA0C00280D55 /* Assets.xcassets in Resources */,
 				246CB2051F9D3D3100053F64 /* StockViewController.xib in Resources */,
+				247D08AC1FB7A0F800556699 /* NewEntryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B3F0BB1FB8F14A005FFA87 /* Entry.swift in Sources */,
 				246CB2071F9D4E4900053F64 /* DataSource.swift in Sources */,
+				247D08AB1FB7A0F800556699 /* NewEntryViewController.swift in Sources */,
 				246CB20C1F9D58B100053F64 /* ProductTableViewCell.swift in Sources */,
 				24E8A6EA1F79BA0C00280D55 /* EntryViewController.swift in Sources */,
 				246CB2001F9D3A3D00053F64 /* MovementsViewController.swift in Sources */,
@@ -267,6 +290,7 @@
 				24E8A6E81F79BA0C00280D55 /* AppDelegate.swift in Sources */,
 				246CB2041F9D3D3100053F64 /* StockViewController.swift in Sources */,
 				246CB2091F9D4EAB00053F64 /* Product.swift in Sources */,
+				24B3F0BF1FB8F461005FFA87 /* EntryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
