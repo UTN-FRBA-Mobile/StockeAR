@@ -8,5 +8,6 @@ target 'StockeAR' do
   pod 'QRCodeReaderViewController'
   pod 'Alamofire'
   pod 'SVProgressHUD'
+  pod 'ESPullToRefresh'
 
 end

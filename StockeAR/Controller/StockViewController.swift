@@ -1,5 +1,6 @@
 import SVProgressHUD
 import UIKit
+import ESPullToRefresh
 
 protocol SearchStockDelegate: NSObjectProtocol {
     func didSelect(product: Product)
@@ -23,6 +24,15 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
         SVProgressHUD.show()
         loadStock()
         loadHeader()
+        addPullToRefresh()
+    }
+    
+    func addPullToRefresh() {
+        self.tableView.es.addPullToRefresh {
+            [unowned self] in
+            self.loadStock()
+            self.tableView.es.stopPullToRefresh(ignoreDate: true)
+        }
     }
 
     func loadStock() {
@@ -31,7 +41,8 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
             if let productList = products {
                 self.reloadData(products: productList)
             } else {
-                print("Error")
+                self.reloadData(products: [])
+                UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
             }
         }
     }

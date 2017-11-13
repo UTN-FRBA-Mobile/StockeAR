@@ -15,6 +15,15 @@ class MovementsViewController: UIViewController, UITableViewDataSource, UITableV
         SVProgressHUD.show()
         loadMovements()
         loadHeader()
+        addPullToRefresh()
+    }
+    
+    func addPullToRefresh() {
+        self.tableView.es.addPullToRefresh {
+            [unowned self] in
+            self.loadMovements()
+            self.tableView.es.stopPullToRefresh(ignoreDate: true)
+        }
     }
     
     func loadMovements() {
@@ -23,7 +32,8 @@ class MovementsViewController: UIViewController, UITableViewDataSource, UITableV
             if let movementsList = movements {
                 self.reloadData(movements: movementsList)
             } else {
-                print("Error")
+                self.reloadData(movements: [])
+                UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
             }
         }
     }

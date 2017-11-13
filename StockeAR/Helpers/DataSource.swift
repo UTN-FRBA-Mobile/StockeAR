@@ -15,7 +15,7 @@ final class DataSource: NSObject {
     static let clientsApiUrl = "http://demo3346287.mockable.io/clients"
     static let providersApiUrl = "http://demo3346287.mockable.io/providers"
     
-    func getStock(completionHandler: @escaping (Array<Product>?, Error?) -> ()) {
+    func getStock(completionHandler: @escaping (Array<Product>?, Int?) -> ()) {
         let header = ["content-type" : "application/json"]
         Alamofire.request(DataSource.stockApiUrl,
                           method: .get,
@@ -24,14 +24,14 @@ final class DataSource: NSObject {
                           headers: header).responseJSON {
                             response in
                             
-                            guard response.result.isSuccess else {
-                                completionHandler(nil, response.result.error)
+                            guard response.response?.statusCode == 200 else {
+                                completionHandler(nil, response.response?.statusCode)
                                 return
                             }
         
                             guard let value = response.result.value as? [String: Any],
                                 let stockList = value["data"] as? [[String: Any]] else {
-                                    completionHandler(nil, response.result.error)
+                                    completionHandler(nil, response.response?.statusCode)
                                     return
                             }
                             
@@ -43,7 +43,7 @@ final class DataSource: NSObject {
         }
     }
     
-    func getEntries(completionHandler: @escaping (Array<Entry>?, Error?) -> ()) {
+    func getEntries(completionHandler: @escaping (Array<Entry>?, Int?) -> ()) {
         let header = ["content-type" : "application/json"]
         Alamofire.request(DataSource.entriesApiUrl,
                           method: .get,
@@ -52,14 +52,14 @@ final class DataSource: NSObject {
                           headers: header).responseJSON {
                             response in
                             
-                            guard response.result.isSuccess else {
-                                completionHandler(nil, response.result.error)
+                            guard response.response?.statusCode == 200 else {
+                                completionHandler(nil, response.response?.statusCode)
                                 return
                             }
                             
                             guard let value = response.result.value as? [String: Any],
                                 let entriesList = value["data"] as? [[String: Any]] else {
-                                    completionHandler(nil, response.result.error)
+                                    completionHandler(nil, response.response?.statusCode)
                                     return
                             }
                             
@@ -71,7 +71,7 @@ final class DataSource: NSObject {
         }
     }
     
-    func getEgresses(completionHandler: @escaping (Array<Egress>?, Error?) -> ()) {
+    func getEgresses(completionHandler: @escaping (Array<Egress>?, Int?) -> ()) {
         let header = ["content-type" : "application/json"]
         Alamofire.request(DataSource.egressesApiUrl,
                           method: .get,
@@ -80,14 +80,14 @@ final class DataSource: NSObject {
                           headers: header).responseJSON {
                             response in
                             
-                            guard response.result.isSuccess else {
-                                completionHandler(nil, response.result.error)
+                            guard response.response?.statusCode == 200 else {
+                                completionHandler(nil, response.response?.statusCode)
                                 return
                             }
                             
                             guard let value = response.result.value as? [String: Any],
                                 let egressList = value["data"] as? [[String: Any]] else {
-                                    completionHandler(nil, response.result.error)
+                                    completionHandler(nil, response.response?.statusCode)
                                     return
                             }
                             
@@ -99,7 +99,7 @@ final class DataSource: NSObject {
         }
     }
     
-    func getMovements(completionHandler: @escaping (Array<Movement>?, Error?) -> ()) {
+    func getMovements(completionHandler: @escaping (Array<Movement>?, Int?) -> ()) {
         let header = ["content-type" : "application/json"]
         Alamofire.request(DataSource.movementsApiUrl,
                           method: .get,
@@ -108,14 +108,14 @@ final class DataSource: NSObject {
                           headers: header).responseJSON {
                             response in
                             
-                            guard response.result.isSuccess else {
-                                completionHandler(nil, response.result.error)
+                            guard response.response?.statusCode == 200 else {
+                                completionHandler(nil, response.response?.statusCode)
                                 return
                             }
                             
                             guard let value = response.result.value as? [String: Any],
                                 let movementsList = value["data"] as? [[String: Any]] else {
-                                    completionHandler(nil, response.result.error)
+                                    completionHandler(nil, response.response?.statusCode)
                                     return
                             }
                             

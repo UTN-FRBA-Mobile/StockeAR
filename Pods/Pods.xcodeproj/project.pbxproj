@@ -7,183 +7,226 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01BD8085CCAA87464B8DB6259C533366 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8494F4B9E79337C89556796A6DB61F75 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE87973265580947E001D96A148B6D8 /* Timeline.swift */; };
-		1191E826655A3D674F725E9FD6AD5C51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB69EC7FE96AB3BA18338762A00BD2F /* QuartzCore.framework */; };
-		16B347B19B147B5B504DF12E00DC2489 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 447F1997E0F8A4B0D878559B633C4D00 /* SVRadialGradientLayer.m */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55FCAA897B135F4B83837F293A065D77 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CB59C4C0561EC08700AED5CA7350359 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF82F6FFB2C9E976075878582FF8A510 /* SVProgressHUD.bundle */; };
-		217E470E52BF39A190DADD00A2FD9705 /* QRCodeReaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1659DFB70FD06EDD70730DE1444669 /* QRCodeReaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21D28C1715401D5A8AB091035EA0CD56 /* QRCodeReaderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A7362D18B66A4FFB5514A55A154767 /* QRCodeReaderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3520B9C6E089C4AB5F74174E700A5B6 /* TaskDelegate.swift */; };
-		36F7B7679E3B372753318321D75678CB /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C112A783FAE60429B35FCF4F4C813F1 /* SVProgressHUD.m */; };
-		43236DC9E084413D9687ECBB137F7A0C /* QRCameraSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A660BCAA573D898C9A8B8F0A5F3BD2DE /* QRCameraSwitchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47EAAA8C6F3E9955BE88FAFA0F2B096C /* QRCodeReaderViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12309D031E6D69F81D0BE692D63F77A2 /* QRCodeReaderViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6975FFF9CA4FF686E51E3AE0DCB4361B /* Request.swift */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA176F4A19324DF7012CEA0AFA9DBED /* DispatchQueue+Alamofire.swift */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B48D1B601FB714ECDD61D145EE9EC5 /* ServerTrustPolicy.swift */; };
+		039013083E037332507A44A7D54D7DF9 /* QRCodeReaderViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF1DCC49F8CCC78302BC9B2E570C80C /* QRCodeReaderViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		051F31D497FFAF1441C3117C8114CB73 /* icon_pull_to_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02DA5C5B8E7897046E7E4E0A323F9798 /* icon_pull_to_refresh_arrow@2x.png */; };
+		089D6C19F9A86A0D468C9179CDA29B46 /* ESRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EA304BD2EA3674FF5B3BE4F799A4AB /* ESRefreshComponent.swift */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C5011AA36BE9A9C7D2BBD7F274DC8 /* Timeline.swift */; };
+		131B0CA91136D9A24C4FD6085BE8859F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB69EC7FE96AB3BA18338762A00BD2F /* QuartzCore.framework */; };
+		168C54B17FC917FAA47E7419447E4316 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B70AA90235F2BA6C6A94B9EF8B19B9 /* SVProgressHUD-dummy.m */; };
+		17A0ADC7BC64D6DB74386B63E4249DA4 /* ESPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BFB1520E999B04655096438C5D815F /* ESPullToRefresh.swift */; };
+		19ADD07AE38FD2997EFB5BD8DA5CF1A1 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 720334BDF635E059521F53C2428C5269 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B0BC13919926E8B0C6289F3FE7D4F53 /* QRToggleTorchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 583E0F135D5DB31C5873E82D08E7B5E1 /* QRToggleTorchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 308410EAEBABEFC6D78F0A5578ED0AD8 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F767C15E3CE99203E799B8641028CA /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 944BBEE43CB7230E6583824DAF5499AF /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2112BF6E1539CE46D82052A5772FB44B /* ESPullToRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB25A5E3E8ACE929890EA0AB8270D49 /* ESPullToRefresh-dummy.m */; };
+		23A240244E4881D33C3B74328653BA24 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A373AF1C36DBF66A773A0198DABCFF9 /* SVRadialGradientLayer.m */; };
+		2A3DE584460F2D23B59BB6262001932B /* QRCodeReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE551BEE16EB8D250B78CBB37F4047C /* QRCodeReaderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		341330923587FE231DEA3915F96A8C72 /* ESRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082F3305D129012F78FB1A8189E2575 /* ESRefreshProtocol.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659717A248520CAD593D48A9C8F7BFE3 /* TaskDelegate.swift */; };
+		36B6F3F13CF713B356C770A38D897234 /* QRCodeReaderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DED3E48F2D300B039366729A5EA054A /* QRCodeReaderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E4BF9ACEF2CBCBE592262A728E5C419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
+		46EC8F0C7C0255AEE6E240B0E1189AB6 /* ESPullToRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9CBF24B8AC75C1464B0FE1CEF9CD937 /* ESPullToRefresh.bundle */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ADF7BDDE213041312F1A0EC7D3779A /* Request.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C564E9F2EA7755E450F14A4B7DD12 /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA1C695EB01ABE7056570EFF729380B /* ServerTrustPolicy.swift */; };
+		6421496E21AC74C27FA5FF80F89BF637 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245E91C8FE776D2761522153D79F185A /* AVFoundation.framework */; };
+		65B306204795F2E67B934CCE698C3ED1 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 294E3297B501E73CBD2F8B0B89BAEAEC /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
-		757814229A6572A6353EBD8FDF023584 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 450DF186449B788BFAF33876F1EAFA63 /* QRCameraSwitchButton.m */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A4D21EB5DE2DF414E02587FD351DD9 /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32910FCF3C4A5885025F1A0E85569878 /* Result.swift */; };
-		8AD0DD48CD8D18C8272C50AA8F86ACE1 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772321BEE92589F50EB7C1EECA44FEF7 /* SVIndefiniteAnimatedView.m */; };
-		8B881DB53EE0DD83237DA5B24D3B0FC7 /* Pods-StockeAR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A52027C9EF6818DAB4758EFF603FD06 /* Pods-StockeAR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		905094DBD185DD6CAE7A934D2C35BC36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
-		95D106C6C23BAB9DFF589F855AD38E02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
-		9DC5970EEC7FFDC1C6A1D19A0681F03E /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467C64418D0AA2641D88B6228A5F409 /* QRCodeReader.m */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50623CDAFA4757D239D82F4A581D897B /* AFError.swift */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231B3FF5C3E0DAA82C921270CC2B3115 /* NetworkReachabilityManager.swift */; };
-		A39ACAB47D667A1AAB48894F2557757E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245E91C8FE776D2761522153D79F185A /* AVFoundation.framework */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AC5DB5C53335F52A4EC8BA61084BED /* Alamofire-dummy.m */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C3A34450646C655DDAF2A0E899797 /* SessionManager.swift */; };
-		B55AE3447CFAD70D7B741CC54FCF960E /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D8AA24B0C05D3C5FA04A1F726726F9E /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B647A56F02D6249F6337F3264D84967 /* MultipartFormData.swift */; };
-		B82635D620459017B077572A6455718F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A32186F892D69ED737C82FFE18487 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66094F29A7966550D4803940B211AD5 /* ParameterEncoding.swift */; };
-		C755B0CE69D92C52951E189425E11F11 /* QRCodeReaderViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 710FF6A16EC80E4658029F188B618F4C /* QRCodeReaderViewController-dummy.m */; };
-		C7D7D4449240038E637548BD312C8715 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 029380E78787CA571FA1263A88A13A85 /* QRToggleTorchButton.m */; };
-		CA7CD08DA4CB02CB9EB31B1B97DA012B /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D45AEEB2E7C5C71A00A704B0C5244EB6 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE806138EB0737D5EB519080348D4CED /* Response.swift */; };
-		CDB755830DB50AF8D7EAFF4BB08C85A1 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 241EBDF0EF490439BE7B813AB078C2A9 /* SVProgressHUD-dummy.m */; };
-		D90ACD76CE075F26B8F4FE8BCF6B197C /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = A291DC38667A575FF021F93E740FE979 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABB054AFEB2046F765CBE1DB9178A13 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58AAD1BEAF52A1E64F58DEAC2291589D /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB8524F0ABEC3A672E2A6631DB5D6450 /* Pods-StockeAR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E4DA5FB11BC7313810E977980B5B4 /* Pods-StockeAR-dummy.m */; };
-		E10F038C52BFE6E8ABD31AB464E7C4F6 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD71FA741F368625527FD880996AB4FA /* QRCodeReaderView.m */; };
-		E1E5C4A4155C7AA61BDDFE897DCC896F /* QRToggleTorchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A87CCFFC8A87C60F5A6CC86F7D7B849 /* QRToggleTorchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE73492DF1F774B064B7C7F8E12B9FF4 /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92B598E9EAD9DD27FB3305D96D57540 /* QRCodeReaderViewController.m */; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175247FDA9609A5CD94414DD22784DDF /* Notifications.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C18B36587186CAB40A6C80EF4520649 /* ResponseSerialization.swift */; };
-		F73772D13A6DDBF84E63664788395772 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A6A7265304F4E2E8B06D92C2FAB063 /* SVProgressAnimatedView.m */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FCC93A2B84B731ECBBD3F293738BF3 /* Alamofire.swift */; };
-		FA530C4405303D3FB201A7C88B3ECF89 /* QRCodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B38C73FBE2D062D2B9E8F9BE7C129F /* QRCodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE05AD6E3343EF135EBFE7FDB8AAF1A3 /* QRCodeReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D352DD3DA3AD1A18856103AA704A62 /* QRCodeReaderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		768FE3BBD10B6D2416B3AB458EA6E798 /* Pods-StockeAR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A52027C9EF6818DAB4758EFF603FD06 /* Pods-StockeAR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B47938CAD75C9EDA5015345B2E351B /* SessionDelegate.swift */; };
+		7D6E9736168FC14FBBFD516B90AAD316 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DA3EB88C2FF2A2DD9E693D5FA9C58F /* SVIndefiniteAnimatedView.m */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9EBB9BB81F6BFC24F6DC14FF6A24B /* Result.swift */; };
+		7F71FE7F19DF3C9245F4ECCCD1661A81 /* ESPullToRefresh+Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D914E776EC00FC4BB79244B4DA39DD /* ESPullToRefresh+Manager.swift */; };
+		883D6DBDBD690A09DAE181AB4BD7586F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
+		937FC9F299D5C20662FDEA8B3805B768 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 30B0F99DE0178008474752833C8AD068 /* SVProgressHUD.bundle */; };
+		9ADD4DF3CFFCEE16AF31D89127BDF4F6 /* ESPullToRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A81AF4AD9631BA448B577A713E1067 /* ESPullToRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD03FAE7E71AD0CBFC6EB7C0B0A6C2 /* AFError.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EBEA4DE2F234214AA881A4246FE7F /* NetworkReachabilityManager.swift */; };
+		A3903F46B7C4468713451748C9CE895F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DA848ACC1DC86BBE5E7FFD00006314 /* SVProgressHUD.m */; };
+		A78BAA2FCA7E25B9C4A965A66B222DD0 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 230C3B54A72A5A7D9ED83A9ACA0A933D /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A7C5A81F08C43E06751FA27CB461F4 /* Alamofire-dummy.m */; };
+		AAFCD155298465934F007512442270C5 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4139C3BB02D57E8C5A7B856E1479C12B /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC2580A8426D2A0899714238142E1376 /* ESRefreshHeaderAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F7E99E7BD617FE6734B90A274AD32 /* ESRefreshHeaderAnimator.swift */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399944039D203D1AD7866C6DCC2B56CA /* SessionManager.swift */; };
+		B4CA0F0ED309B33CE47DC288025166B3 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA89801A0E9E2F2DFEFAE20762647A /* QRCameraSwitchButton.m */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683AF88F8256581527383C4C0D1ABE3 /* MultipartFormData.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F70C549FAEDEF98E858DA8F446CF24 /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54ABA2B3AF15BB16BEBD7E116FFB3DC /* ParameterEncoding.swift */; };
+		BEC3C5C24840F5394909F85E9F5B0EC0 /* ESRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17295754A9070BD0492907AE1776CD74 /* ESRefreshAnimator.swift */; };
+		C0115FE03805D31F705D5945235862C7 /* QRCameraSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F21AAF5CBEEC7BAAFB4088F69E5EB324 /* QRCameraSwitchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1B040536202329BD6C586F71AE3CDA8 /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4886FCD3628BCC55F5577DC22A371A59 /* QRCodeReader.m */; };
+		C7D13F74FCA60682E1FF24B957B64D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E1DFCCE6063861D0990A597E1BE67 /* Response.swift */; };
+		CE018498472F732466D59EC65D6A4EE4 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4331E1C8FAB642BD80E768B01B3E78CC /* SVProgressAnimatedView.m */; };
+		CEFE878D07A28804A73DDAB5F6C6C60C /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A661B611EDE14B1D313E42C340DE64CC /* QRCodeReaderViewController.m */; };
+		D007E9A5D7A53D2AB782900B2D7741EB /* Pods-StockeAR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6E4DA5FB11BC7313810E977980B5B4 /* Pods-StockeAR-dummy.m */; };
+		D2A82DEB631CE6C4C1CED75486637FE6 /* QRCodeReaderViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EFC295267B56C079FC6F1851451AC /* QRCodeReaderViewController-dummy.m */; };
+		D5F6D371D9F03FD0ED849BA823890CEE /* QRCodeReaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D006A9D90E2A853A23EEF78AD1CC34 /* QRCodeReaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D854A2F7AE5485760E77A6E19214E707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
+		DB6E282D02A96A836C04CC8FF02DE757 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55845EE05B38CF188DE0C43A073F6570 /* QRCodeReaderView.m */; };
+		E1E6D8EBF2966F5203D842C515E45E64 /* ES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9834253C122E3911132931C07F170F26 /* ES.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498F01D6ED97FD21E694F8496C2EF7F /* Notifications.swift */; };
+		F15B794587FB22D9B2C782DC7261819B /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D78E6ACAC540E5D7A242EB2535C0CC /* QRToggleTorchButton.m */; };
+		F39A32593CD6946D80EC9908617FB417 /* ESRefreshFooterAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08A447FDBA71D099A95088C775D7DD4 /* ESRefreshFooterAnimator.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F27D16744BC4A986B5197E8CCAC28B /* ResponseSerialization.swift */; };
+		F7577431C3B3A45A333FE998F732DE9F /* QRCodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A04F2A2C8EFC1C6D38C2E7A62205FA8 /* QRCodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF80E88498FE04996FC801F15D52927 /* Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		10176F907CDE3E5E040B20CA59F419AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4829C90539E9E4D9DFB4D27C693B28DB;
-			remoteInfo = SVProgressHUD;
-		};
-		3456DA28D716CCEB9F215309B3C6C401 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AA32D066D2B3652718EFAD740E8DC8D7;
-			remoteInfo = QRCodeReaderViewController;
-		};
-		6AD84C580253B5B1BE4A5B6BCC0D9A52 /* PBXContainerItemProxy */ = {
+		6B90A0B769DB6B48A62D5AAB223EB5FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
+		9A796E68171A2606CA170B39634C90BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1CFA156DF9AD56A6424A8B5DDDCC42B;
+			remoteInfo = "ESPullToRefresh-ESPullToRefresh";
+		};
+		A34F6462C2A5904E9F17C85965F2FA96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BB92BC13278A8C0FD6823C73E3A42AC;
+			remoteInfo = QRCodeReaderViewController;
+		};
+		A6084E45CC64287E7D78BCF8BABD3E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F673184EDD43C0D2CE7911730B7EE426;
+			remoteInfo = SVProgressHUD;
+		};
+		ECD308C1EAE8F51080BF589F3DA3E85C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AAC70897269009701EA2ADFE2CB50C2;
+			remoteInfo = ESPullToRefresh;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		029380E78787CA571FA1263A88A13A85 /* QRToggleTorchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRToggleTorchButton.m; path = QRCodeReaderViewController/QRToggleTorchButton.m; sourceTree = "<group>"; };
-		0467C64418D0AA2641D88B6228A5F409 /* QRCodeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReader.m; path = QRCodeReaderViewController/QRCodeReader.m; sourceTree = "<group>"; };
+		01EC72BC2F3782AF8AD3DA3A6E2884B0 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		02DA5C5B8E7897046E7E4E0A323F9798 /* icon_pull_to_refresh_arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_pull_to_refresh_arrow@2x.png"; path = "Sources/Animator/icon_pull_to_refresh_arrow@2x.png"; sourceTree = "<group>"; };
+		02EA304BD2EA3674FF5B3BE4F799A4AB /* ESRefreshComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshComponent.swift; path = Sources/ESRefreshComponent.swift; sourceTree = "<group>"; };
+		02FD3DB2D45DECF8A4C2DB894A6B2DC8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D6EFC2024B9560FA51D0965E3642ED /* Pods-StockeAR-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StockeAR-resources.sh"; sourceTree = "<group>"; };
-		06A6A7265304F4E2E8B06D92C2FAB063 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		0A04F2A2C8EFC1C6D38C2E7A62205FA8 /* QRCodeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReader.h; path = QRCodeReaderViewController/QRCodeReader.h; sourceTree = "<group>"; };
 		0BDEDC672AA6DD3D24EF84B72E8E98F6 /* Pods-StockeAR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StockeAR-acknowledgements.plist"; sourceTree = "<group>"; };
 		0D2E142DB3D87BBA78387234D9699DE0 /* Pods-StockeAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StockeAR.release.xcconfig"; sourceTree = "<group>"; };
-		11981A4D62E756D1FC46F30F06E13CC9 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		11BE68F91149DEA9E8946D31DBD2AAD4 /* Pods-StockeAR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StockeAR-frameworks.sh"; sourceTree = "<group>"; };
-		12309D031E6D69F81D0BE692D63F77A2 /* QRCodeReaderViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReaderViewController-umbrella.h"; sourceTree = "<group>"; };
-		12A4D21EB5DE2DF414E02587FD351DD9 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		13B38C73FBE2D062D2B9E8F9BE7C129F /* QRCodeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReader.h; path = QRCodeReaderViewController/QRCodeReader.h; sourceTree = "<group>"; };
-		14AC5DB5C53335F52A4EC8BA61084BED /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		175247FDA9609A5CD94414DD22784DDF /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		1683AF88F8256581527383C4C0D1ABE3 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		16C91CB6DD8DE236EB78576238546A3C /* QRCodeReaderViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QRCodeReaderViewController.framework; path = QRCodeReaderViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17295754A9070BD0492907AE1776CD74 /* ESRefreshAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshAnimator.swift; path = Sources/ESRefreshAnimator.swift; sourceTree = "<group>"; };
+		1856C4DDA094A39DD49433900D5C512D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A81AF4AD9631BA448B577A713E1067 /* ESPullToRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESPullToRefresh-umbrella.h"; sourceTree = "<group>"; };
 		1A52027C9EF6818DAB4758EFF603FD06 /* Pods-StockeAR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StockeAR-umbrella.h"; sourceTree = "<group>"; };
-		1B647A56F02D6249F6337F3264D84967 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		1FE87973265580947E001D96A148B6D8 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		231B3FF5C3E0DAA82C921270CC2B3115 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		241EBDF0EF490439BE7B813AB078C2A9 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		1A9E1DFCCE6063861D0990A597E1BE67 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		230C3B54A72A5A7D9ED83A9ACA0A933D /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		23D78E6ACAC540E5D7A242EB2535C0CC /* QRToggleTorchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRToggleTorchButton.m; path = QRCodeReaderViewController/QRToggleTorchButton.m; sourceTree = "<group>"; };
 		245E91C8FE776D2761522153D79F185A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		24822F381A96147A56AB1692BDEF3440 /* QRCodeReaderViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = QRCodeReaderViewController.modulemap; sourceTree = "<group>"; };
 		251AA12A22D61D64B048B58CFF0C4CD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26DC6AEC22512A7673EE6DB3313A9BAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B1659DFB70FD06EDD70730DE1444669 /* QRCodeReaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderView.h; path = QRCodeReaderViewController/QRCodeReaderView.h; sourceTree = "<group>"; };
+		294E3297B501E73CBD2F8B0B89BAEAEC /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		2A299E3DC0E20AF828F23E6D5A72851E /* ESPullToRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ESPullToRefresh.xcconfig; sourceTree = "<group>"; };
+		2A940A9D84B114E1451C93C9B9AAF4F2 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		2DB69EC7FE96AB3BA18338762A00BD2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		325ED2271DBC960CD10BB7A8BAD722E9 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		32910FCF3C4A5885025F1A0E85569878 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		3673F46BA9131F0C669ADBB0D5974FE2 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		3BA9F64F05DEA3EFED9632F155DFCD55 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C18B36587186CAB40A6C80EF4520649 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		447F1997E0F8A4B0D878559B633C4D00 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		450DF186449B788BFAF33876F1EAFA63 /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCameraSwitchButton.m; path = QRCodeReaderViewController/QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		2DED3E48F2D300B039366729A5EA054A /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderDelegate.h; path = QRCodeReaderViewController/QRCodeReaderDelegate.h; sourceTree = "<group>"; };
+		308410EAEBABEFC6D78F0A5578ED0AD8 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		30B0F99DE0178008474752833C8AD068 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		31EBB000E7BFA26551C170B3D8C119E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F03B7446AA4D27B2310E7A6DD1577E /* ESPullToRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ESPullToRefresh.modulemap; sourceTree = "<group>"; };
+		38B4A2F2781632702796041BB454FABF /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		399944039D203D1AD7866C6DCC2B56CA /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		3B0EBEA4DE2F234214AA881A4246FE7F /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		3B2BDEE7AC4D744BA94928C6F060C6EE /* ESPullToRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESPullToRefresh-prefix.pch"; sourceTree = "<group>"; };
+		4139C3BB02D57E8C5A7B856E1479C12B /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		4331E1C8FAB642BD80E768B01B3E78CC /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		4886FCD3628BCC55F5577DC22A371A59 /* QRCodeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReader.m; path = QRCodeReaderViewController/QRCodeReader.m; sourceTree = "<group>"; };
 		49A144D713C71E1B88EED05431000AD5 /* Pods-StockeAR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-StockeAR.modulemap"; sourceTree = "<group>"; };
-		50623CDAFA4757D239D82F4A581D897B /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		52D352DD3DA3AD1A18856103AA704A62 /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderViewController.h; path = QRCodeReaderViewController/QRCodeReaderViewController.h; sourceTree = "<group>"; };
-		55FCAA897B135F4B83837F293A065D77 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		58AAD1BEAF52A1E64F58DEAC2291589D /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		6824436D6A959183B8FE67AC65732487 /* QRCodeReaderViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReaderViewController-prefix.pch"; sourceTree = "<group>"; };
-		6975FFF9CA4FF686E51E3AE0DCB4361B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		6C112A783FAE60429B35FCF4F4C813F1 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		6C13CD404927C57E511F9AE802B9E45B /* QRCodeReaderViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QRCodeReaderViewController.framework; path = QRCodeReaderViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D8AA24B0C05D3C5FA04A1F726726F9E /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		6E307D6211E9A431F0A5FDA45E336F77 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		710FF6A16EC80E4658029F188B618F4C /* QRCodeReaderViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCodeReaderViewController-dummy.m"; sourceTree = "<group>"; };
+		4C4C5011AA36BE9A9C7D2BBD7F274DC8 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		53F70C549FAEDEF98E858DA8F446CF24 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		55845EE05B38CF188DE0C43A073F6570 /* QRCodeReaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderView.m; path = QRCodeReaderViewController/QRCodeReaderView.m; sourceTree = "<group>"; };
+		57F27D16744BC4A986B5197E8CCAC28B /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		583E0F135D5DB31C5873E82D08E7B5E1 /* QRToggleTorchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRToggleTorchButton.h; path = QRCodeReaderViewController/QRToggleTorchButton.h; sourceTree = "<group>"; };
+		5EAB34A506AF86AAFAA7483C5E8EFBD4 /* ResourceBundle-ESPullToRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ESPullToRefresh-Info.plist"; sourceTree = "<group>"; };
+		659717A248520CAD593D48A9C8F7BFE3 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		66B47938CAD75C9EDA5015345B2E351B /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		67C6364489051090CDFA17BD9E9CAB4C /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DA848ACC1DC86BBE5E7FFD00006314 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		6A373AF1C36DBF66A773A0198DABCFF9 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		6DF1DCC49F8CCC78302BC9B2E570C80C /* QRCodeReaderViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReaderViewController-umbrella.h"; sourceTree = "<group>"; };
+		6EE6AEECFB892ED2E41139B16F538E94 /* QRCodeReaderViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReaderViewController-prefix.pch"; sourceTree = "<group>"; };
+		720334BDF635E059521F53C2428C5269 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		7498F01D6ED97FD21E694F8496C2EF7F /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		761D8D50722934A724B04D37C3906B97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		772321BEE92589F50EB7C1EECA44FEF7 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		8494F4B9E79337C89556796A6DB61F75 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		87B48D1B601FB714ECDD61D145EE9EC5 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		8A87CCFFC8A87C60F5A6CC86F7D7B849 /* QRToggleTorchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRToggleTorchButton.h; path = QRCodeReaderViewController/QRToggleTorchButton.h; sourceTree = "<group>"; };
+		78DA3EB88C2FF2A2DD9E693D5FA9C58F /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		84DD4630E2AE3D99526E07F50B7C2F87 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		86ADF7BDDE213041312F1A0EC7D3779A /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		8B6E4DA5FB11BC7313810E977980B5B4 /* Pods-StockeAR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StockeAR-dummy.m"; sourceTree = "<group>"; };
-		8F0F7C01B68EA33AB09EA5B70F170321 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		8BB25A5E3E8ACE929890EA0AB8270D49 /* ESPullToRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ESPullToRefresh-dummy.m"; sourceTree = "<group>"; };
+		8D671426128C51EB84C368AC9BECD509 /* ESPullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESPullToRefresh.framework; path = ESPullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA1C695EB01ABE7056570EFF729380B /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		8EFADE9D9B76FF087AD8B90C7CC56185 /* Pods_StockeAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StockeAR.framework; path = "Pods-StockeAR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A9A32186F892D69ED737C82FFE18487 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		A291DC38667A575FF021F93E740FE979 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		A66094F29A7966550D4803940B211AD5 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		A660BCAA573D898C9A8B8F0A5F3BD2DE /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCameraSwitchButton.h; path = QRCodeReaderViewController/QRCameraSwitchButton.h; sourceTree = "<group>"; };
-		AE806138EB0737D5EB519080348D4CED /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		AF82F6FFB2C9E976075878582FF8A510 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		B07C3A34450646C655DDAF2A0E899797 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		B1FCC93A2B84B731ECBBD3F293738BF3 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		B3520B9C6E089C4AB5F74174E700A5B6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		B92B598E9EAD9DD27FB3305D96D57540 /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderViewController.m; path = QRCodeReaderViewController/QRCodeReaderViewController.m; sourceTree = "<group>"; };
-		C4A7362D18B66A4FFB5514A55A154767 /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderDelegate.h; path = QRCodeReaderViewController/QRCodeReaderDelegate.h; sourceTree = "<group>"; };
-		CB14B941CF55CDA553597921B60C1A69 /* Pods_StockeAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StockeAR.framework; path = "Pods-StockeAR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD15F0A857A2373F1097FC827EB3A89C /* QRCodeReaderViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCodeReaderViewController.xcconfig; sourceTree = "<group>"; };
-		CF4AD8C379073E6AC40020A4C7502161 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D018609914B2657CB0EB1ADC13B454C5 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		D45AEEB2E7C5C71A00A704B0C5244EB6 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		D6DB06F44607A1EA45D15289D97D9A69 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD71FA741F368625527FD880996AB4FA /* QRCodeReaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderView.m; path = QRCodeReaderViewController/QRCodeReaderView.m; sourceTree = "<group>"; };
+		944BBEE43CB7230E6583824DAF5499AF /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		9834253C122E3911132931C07F170F26 /* ES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ES.swift; path = Sources/ES.swift; sourceTree = "<group>"; };
+		9B1AF73A5ED40C4EEBED424DDB48C0C3 /* QRCodeReaderViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = QRCodeReaderViewController.modulemap; sourceTree = "<group>"; };
+		A54ABA2B3AF15BB16BEBD7E116FFB3DC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		A661B611EDE14B1D313E42C340DE64CC /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderViewController.m; path = QRCodeReaderViewController/QRCodeReaderViewController.m; sourceTree = "<group>"; };
+		A9CBF24B8AC75C1464B0FE1CEF9CD937 /* ESPullToRefresh.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ESPullToRefresh.bundle; path = ESPullToRefresh.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE551BEE16EB8D250B78CBB37F4047C /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderViewController.h; path = QRCodeReaderViewController/QRCodeReaderViewController.h; sourceTree = "<group>"; };
+		B36F942482F2BC77B031923B5FEAFAD9 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		B5BFB1520E999B04655096438C5D815F /* ESPullToRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESPullToRefresh.swift; path = Sources/ESPullToRefresh.swift; sourceTree = "<group>"; };
+		B8A7C5A81F08C43E06751FA27CB461F4 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		BB0C564E9F2EA7755E450F14A4B7DD12 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		BDFA89801A0E9E2F2DFEFAE20762647A /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCameraSwitchButton.m; path = QRCodeReaderViewController/QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		C082F3305D129012F78FB1A8189E2575 /* ESRefreshProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshProtocol.swift; path = Sources/ESRefreshProtocol.swift; sourceTree = "<group>"; };
+		C1BD03FAE7E71AD0CBFC6EB7C0B0A6C2 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		CFD9EBB9BB81F6BFC24F6DC14FF6A24B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		D870B95847ACD472098FDAD8097C1C5F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88EFC295267B56C079FC6F1851451AC /* QRCodeReaderViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCodeReaderViewController-dummy.m"; sourceTree = "<group>"; };
+		D8B70AA90235F2BA6C6A94B9EF8B19B9 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		E24779A7EFE40BEFB2F4C833D95938E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3250977477E9F11CF8FDA22CE7262CD /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		E4DB663C1AFB8B7408C67277EAC9103A /* Pods-StockeAR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StockeAR-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E6CEE6376DB0CB7BB7C60140EB589B0C /* Pods-StockeAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StockeAR.debug.xcconfig"; sourceTree = "<group>"; };
-		FDA176F4A19324DF7012CEA0AFA9DBED /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		FE04679E2DD9EA00342E9AF58AA0A111 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		EAF74C59E91B3D78BFD6C22D285295F4 /* QRCodeReaderViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCodeReaderViewController.xcconfig; sourceTree = "<group>"; };
+		ED2F7E99E7BD617FE6734B90A274AD32 /* ESRefreshHeaderAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshHeaderAnimator.swift; path = Sources/Animator/ESRefreshHeaderAnimator.swift; sourceTree = "<group>"; };
+		F08A447FDBA71D099A95088C775D7DD4 /* ESRefreshFooterAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshFooterAnimator.swift; path = Sources/Animator/ESRefreshFooterAnimator.swift; sourceTree = "<group>"; };
+		F21AAF5CBEEC7BAAFB4088F69E5EB324 /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCameraSwitchButton.h; path = QRCodeReaderViewController/QRCameraSwitchButton.h; sourceTree = "<group>"; };
+		F4D006A9D90E2A853A23EEF78AD1CC34 /* QRCodeReaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderView.h; path = QRCodeReaderViewController/QRCodeReaderView.h; sourceTree = "<group>"; };
+		F6D914E776EC00FC4BB79244B4DA39DD /* ESPullToRefresh+Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ESPullToRefresh+Manager.swift"; path = "Sources/ESPullToRefresh+Manager.swift"; sourceTree = "<group>"; };
+		FAF80E88498FE04996FC801F15D52927 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		096767CC9C9A64D8ED32AB8AD573612C /* Frameworks */ = {
+		3C2605F9DCE639FDF98196F1C827D59A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				905094DBD185DD6CAE7A934D2C35BC36 /* Foundation.framework in Frameworks */,
-				1191E826655A3D674F725E9FD6AD5C51 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31A4EE056CD725BD5B7BBD24B1C86795 /* Frameworks */ = {
+		3E74090285923D1801ACDD66C0A5EAC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A39ACAB47D667A1AAB48894F2557757E /* AVFoundation.framework in Frameworks */,
-				B82635D620459017B077572A6455718F /* Foundation.framework in Frameworks */,
+				6421496E21AC74C27FA5FF80F89BF637 /* AVFoundation.framework in Frameworks */,
+				883D6DBDBD690A09DAE181AB4BD7586F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		498DB7D514F42F43884DDA6E238EF8C0 /* Frameworks */ = {
+		7C6944BD28BCEF0EBA7AE1924E9E2810 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95D106C6C23BAB9DFF589F855AD38E02 /* Foundation.framework in Frameworks */,
+				D854A2F7AE5485760E77A6E19214E707 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +235,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FE4E5F7654F71B166B6A85DDE758E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D13F74FCA60682E1FF24B957B64D8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0CACB0318CCAC7B50D3D988F57BFE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4BF9ACEF2CBCBE592262A728E5C419 /* Foundation.framework in Frameworks */,
+				131B0CA91136D9A24C4FD6085BE8859F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +266,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1692CA54CE96C6AE8ED3E17D12AFC464 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E24779A7EFE40BEFB2F4C833D95938E1 /* Info.plist */,
+				9B1AF73A5ED40C4EEBED424DDB48C0C3 /* QRCodeReaderViewController.modulemap */,
+				EAF74C59E91B3D78BFD6C22D285295F4 /* QRCodeReaderViewController.xcconfig */,
+				D88EFC295267B56C079FC6F1851451AC /* QRCodeReaderViewController-dummy.m */,
+				6EE6AEECFB892ED2E41139B16F538E94 /* QRCodeReaderViewController-prefix.pch */,
+				6DF1DCC49F8CCC78302BC9B2E570C80C /* QRCodeReaderViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QRCodeReaderViewController";
+			sourceTree = "<group>";
+		};
+		3392C875F2B072F901D6E7A8FFDCE839 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3250977477E9F11CF8FDA22CE7262CD /* Alamofire.modulemap */,
+				01EC72BC2F3782AF8AD3DA3A6E2884B0 /* Alamofire.xcconfig */,
+				B8A7C5A81F08C43E06751FA27CB461F4 /* Alamofire-dummy.m */,
+				38B4A2F2781632702796041BB454FABF /* Alamofire-prefix.pch */,
+				308410EAEBABEFC6D78F0A5578ED0AD8 /* Alamofire-umbrella.h */,
+				1856C4DDA094A39DD49433900D5C512D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
 		355756B4D6E57923CF53178ADC49B985 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,30 +304,43 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		44197CB448DEB8FF1424649CF4DFD76A /* Alamofire */ = {
+		401C0B9200F2B515F9053CCFAEF02F79 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				50623CDAFA4757D239D82F4A581D897B /* AFError.swift */,
-				B1FCC93A2B84B731ECBBD3F293738BF3 /* Alamofire.swift */,
-				FDA176F4A19324DF7012CEA0AFA9DBED /* DispatchQueue+Alamofire.swift */,
-				1B647A56F02D6249F6337F3264D84967 /* MultipartFormData.swift */,
-				231B3FF5C3E0DAA82C921270CC2B3115 /* NetworkReachabilityManager.swift */,
-				175247FDA9609A5CD94414DD22784DDF /* Notifications.swift */,
-				A66094F29A7966550D4803940B211AD5 /* ParameterEncoding.swift */,
-				6975FFF9CA4FF686E51E3AE0DCB4361B /* Request.swift */,
-				AE806138EB0737D5EB519080348D4CED /* Response.swift */,
-				3C18B36587186CAB40A6C80EF4520649 /* ResponseSerialization.swift */,
-				32910FCF3C4A5885025F1A0E85569878 /* Result.swift */,
-				87B48D1B601FB714ECDD61D145EE9EC5 /* ServerTrustPolicy.swift */,
-				12A4D21EB5DE2DF414E02587FD351DD9 /* SessionDelegate.swift */,
-				B07C3A34450646C655DDAF2A0E899797 /* SessionManager.swift */,
-				B3520B9C6E089C4AB5F74174E700A5B6 /* TaskDelegate.swift */,
-				1FE87973265580947E001D96A148B6D8 /* Timeline.swift */,
-				9A9A32186F892D69ED737C82FFE18487 /* Validation.swift */,
-				7C09EA64143FD1418BF4FB28E8BD5529 /* Support Files */,
+				30B0F99DE0178008474752833C8AD068 /* SVProgressHUD.bundle */,
 			);
-			name = Alamofire;
-			path = Alamofire;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4A94D4C8B0EAA5483784BE57EC68A023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D870B95847ACD472098FDAD8097C1C5F /* Alamofire.framework */,
+				A9CBF24B8AC75C1464B0FE1CEF9CD937 /* ESPullToRefresh.bundle */,
+				8D671426128C51EB84C368AC9BECD509 /* ESPullToRefresh.framework */,
+				8EFADE9D9B76FF087AD8B90C7CC56185 /* Pods_StockeAR.framework */,
+				16C91CB6DD8DE236EB78576238546A3C /* QRCodeReaderViewController.framework */,
+				67C6364489051090CDFA17BD9E9CAB4C /* SVProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5300EF0C1251B5DD95B104F60A03CE0A /* ESPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				9834253C122E3911132931C07F170F26 /* ES.swift */,
+				B5BFB1520E999B04655096438C5D815F /* ESPullToRefresh.swift */,
+				F6D914E776EC00FC4BB79244B4DA39DD /* ESPullToRefresh+Manager.swift */,
+				17295754A9070BD0492907AE1776CD74 /* ESRefreshAnimator.swift */,
+				02EA304BD2EA3674FF5B3BE4F799A4AB /* ESRefreshComponent.swift */,
+				F08A447FDBA71D099A95088C775D7DD4 /* ESRefreshFooterAnimator.swift */,
+				ED2F7E99E7BD617FE6734B90A274AD32 /* ESRefreshHeaderAnimator.swift */,
+				C082F3305D129012F78FB1A8189E2575 /* ESRefreshProtocol.swift */,
+				99DC0E1E5CB5ECFDBF87BCD5DECC740B /* Resources */,
+				E33B593B62F74643C3A47966002D8C53 /* Support Files */,
+			);
+			name = ESPullToRefresh;
+			path = ESPullToRefresh;
 			sourceTree = "<group>";
 		};
 		5C0962A3076FA48D3290E2160DB81BDA /* Pods-StockeAR */ = {
@@ -260,28 +361,49 @@
 			path = "Target Support Files/Pods-StockeAR";
 			sourceTree = "<group>";
 		};
-		6817F2D6FFF1745AA196EDDF4DA5EF2D /* Pods */ = {
+		709DF07B0F323A9F302AC3B0504B1120 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				44197CB448DEB8FF1424649CF4DFD76A /* Alamofire */,
-				D33DD4A6BE2AFDE19644779C731FEDF0 /* QRCodeReaderViewController */,
-				CE9C8784EB23D5D6B049D4C1F8ED55BE /* SVProgressHUD */,
+				B78802F2F47C612E0C15FC97F25B3B62 /* Alamofire */,
+				5300EF0C1251B5DD95B104F60A03CE0A /* ESPullToRefresh */,
+				758E2A8E2A83F364BD1147CD560A312B /* QRCodeReaderViewController */,
+				F2FB7C0E0816B9099FD86878DC35CC36 /* SVProgressHUD */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7C09EA64143FD1418BF4FB28E8BD5529 /* Support Files */ = {
+		727FD7CE49381DE7DF34CB0FAE691A36 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FE04679E2DD9EA00342E9AF58AA0A111 /* Alamofire.modulemap */,
-				3673F46BA9131F0C669ADBB0D5974FE2 /* Alamofire.xcconfig */,
-				14AC5DB5C53335F52A4EC8BA61084BED /* Alamofire-dummy.m */,
-				325ED2271DBC960CD10BB7A8BAD722E9 /* Alamofire-prefix.pch */,
-				55FCAA897B135F4B83837F293A065D77 /* Alamofire-umbrella.h */,
-				26DC6AEC22512A7673EE6DB3313A9BAA /* Info.plist */,
+				02FD3DB2D45DECF8A4C2DB894A6B2DC8 /* Info.plist */,
+				2A940A9D84B114E1451C93C9B9AAF4F2 /* SVProgressHUD.modulemap */,
+				B36F942482F2BC77B031923B5FEAFAD9 /* SVProgressHUD.xcconfig */,
+				D8B70AA90235F2BA6C6A94B9EF8B19B9 /* SVProgressHUD-dummy.m */,
+				84DD4630E2AE3D99526E07F50B7C2F87 /* SVProgressHUD-prefix.pch */,
+				4139C3BB02D57E8C5A7B856E1479C12B /* SVProgressHUD-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		758E2A8E2A83F364BD1147CD560A312B /* QRCodeReaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F21AAF5CBEEC7BAAFB4088F69E5EB324 /* QRCameraSwitchButton.h */,
+				BDFA89801A0E9E2F2DFEFAE20762647A /* QRCameraSwitchButton.m */,
+				0A04F2A2C8EFC1C6D38C2E7A62205FA8 /* QRCodeReader.h */,
+				4886FCD3628BCC55F5577DC22A371A59 /* QRCodeReader.m */,
+				2DED3E48F2D300B039366729A5EA054A /* QRCodeReaderDelegate.h */,
+				F4D006A9D90E2A853A23EEF78AD1CC34 /* QRCodeReaderView.h */,
+				55845EE05B38CF188DE0C43A073F6570 /* QRCodeReaderView.m */,
+				ADE551BEE16EB8D250B78CBB37F4047C /* QRCodeReaderViewController.h */,
+				A661B611EDE14B1D313E42C340DE64CC /* QRCodeReaderViewController.m */,
+				583E0F135D5DB31C5873E82D08E7B5E1 /* QRToggleTorchButton.h */,
+				23D78E6ACAC540E5D7A242EB2535C0CC /* QRToggleTorchButton.m */,
+				1692CA54CE96C6AE8ED3E17D12AFC464 /* Support Files */,
+			);
+			name = QRCodeReaderViewController;
+			path = QRCodeReaderViewController;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -289,95 +411,59 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				6817F2D6FFF1745AA196EDDF4DA5EF2D /* Pods */,
-				E0EEA86D870E365C2A0DCB677A1A9E3C /* Products */,
+				709DF07B0F323A9F302AC3B0504B1120 /* Pods */,
+				4A94D4C8B0EAA5483784BE57EC68A023 /* Products */,
 				EDDFF3C2B3D2BC41119CBB6F13231293 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B12DB527B2FE75017B1D57845D4E0C85 /* Support Files */ = {
+		99DC0E1E5CB5ECFDBF87BCD5DECC740B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D6DB06F44607A1EA45D15289D97D9A69 /* Info.plist */,
-				11981A4D62E756D1FC46F30F06E13CC9 /* SVProgressHUD.modulemap */,
-				D018609914B2657CB0EB1ADC13B454C5 /* SVProgressHUD.xcconfig */,
-				241EBDF0EF490439BE7B813AB078C2A9 /* SVProgressHUD-dummy.m */,
-				8F0F7C01B68EA33AB09EA5B70F170321 /* SVProgressHUD-prefix.pch */,
-				58AAD1BEAF52A1E64F58DEAC2291589D /* SVProgressHUD-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
-			sourceTree = "<group>";
-		};
-		B13B4E4F749A3807EA6E59C350812E69 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AF82F6FFB2C9E976075878582FF8A510 /* SVProgressHUD.bundle */,
+				02DA5C5B8E7897046E7E4E0A323F9798 /* icon_pull_to_refresh_arrow@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		CE9C8784EB23D5D6B049D4C1F8ED55BE /* SVProgressHUD */ = {
+		B78802F2F47C612E0C15FC97F25B3B62 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				8494F4B9E79337C89556796A6DB61F75 /* SVIndefiniteAnimatedView.h */,
-				772321BEE92589F50EB7C1EECA44FEF7 /* SVIndefiniteAnimatedView.m */,
-				A291DC38667A575FF021F93E740FE979 /* SVProgressAnimatedView.h */,
-				06A6A7265304F4E2E8B06D92C2FAB063 /* SVProgressAnimatedView.m */,
-				6D8AA24B0C05D3C5FA04A1F726726F9E /* SVProgressHUD.h */,
-				6C112A783FAE60429B35FCF4F4C813F1 /* SVProgressHUD.m */,
-				D45AEEB2E7C5C71A00A704B0C5244EB6 /* SVRadialGradientLayer.h */,
-				447F1997E0F8A4B0D878559B633C4D00 /* SVRadialGradientLayer.m */,
-				B13B4E4F749A3807EA6E59C350812E69 /* Resources */,
-				B12DB527B2FE75017B1D57845D4E0C85 /* Support Files */,
+				C1BD03FAE7E71AD0CBFC6EB7C0B0A6C2 /* AFError.swift */,
+				FAF80E88498FE04996FC801F15D52927 /* Alamofire.swift */,
+				BB0C564E9F2EA7755E450F14A4B7DD12 /* DispatchQueue+Alamofire.swift */,
+				1683AF88F8256581527383C4C0D1ABE3 /* MultipartFormData.swift */,
+				3B0EBEA4DE2F234214AA881A4246FE7F /* NetworkReachabilityManager.swift */,
+				7498F01D6ED97FD21E694F8496C2EF7F /* Notifications.swift */,
+				A54ABA2B3AF15BB16BEBD7E116FFB3DC /* ParameterEncoding.swift */,
+				86ADF7BDDE213041312F1A0EC7D3779A /* Request.swift */,
+				1A9E1DFCCE6063861D0990A597E1BE67 /* Response.swift */,
+				57F27D16744BC4A986B5197E8CCAC28B /* ResponseSerialization.swift */,
+				CFD9EBB9BB81F6BFC24F6DC14FF6A24B /* Result.swift */,
+				8DA1C695EB01ABE7056570EFF729380B /* ServerTrustPolicy.swift */,
+				66B47938CAD75C9EDA5015345B2E351B /* SessionDelegate.swift */,
+				399944039D203D1AD7866C6DCC2B56CA /* SessionManager.swift */,
+				659717A248520CAD593D48A9C8F7BFE3 /* TaskDelegate.swift */,
+				4C4C5011AA36BE9A9C7D2BBD7F274DC8 /* Timeline.swift */,
+				53F70C549FAEDEF98E858DA8F446CF24 /* Validation.swift */,
+				3392C875F2B072F901D6E7A8FFDCE839 /* Support Files */,
 			);
-			name = SVProgressHUD;
-			path = SVProgressHUD;
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		D33DD4A6BE2AFDE19644779C731FEDF0 /* QRCodeReaderViewController */ = {
+		E33B593B62F74643C3A47966002D8C53 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A660BCAA573D898C9A8B8F0A5F3BD2DE /* QRCameraSwitchButton.h */,
-				450DF186449B788BFAF33876F1EAFA63 /* QRCameraSwitchButton.m */,
-				13B38C73FBE2D062D2B9E8F9BE7C129F /* QRCodeReader.h */,
-				0467C64418D0AA2641D88B6228A5F409 /* QRCodeReader.m */,
-				C4A7362D18B66A4FFB5514A55A154767 /* QRCodeReaderDelegate.h */,
-				2B1659DFB70FD06EDD70730DE1444669 /* QRCodeReaderView.h */,
-				DD71FA741F368625527FD880996AB4FA /* QRCodeReaderView.m */,
-				52D352DD3DA3AD1A18856103AA704A62 /* QRCodeReaderViewController.h */,
-				B92B598E9EAD9DD27FB3305D96D57540 /* QRCodeReaderViewController.m */,
-				8A87CCFFC8A87C60F5A6CC86F7D7B849 /* QRToggleTorchButton.h */,
-				029380E78787CA571FA1263A88A13A85 /* QRToggleTorchButton.m */,
-				E905528706BF421B7B71C6DB7719CBEC /* Support Files */,
-			);
-			name = QRCodeReaderViewController;
-			path = QRCodeReaderViewController;
-			sourceTree = "<group>";
-		};
-		E0EEA86D870E365C2A0DCB677A1A9E3C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CF4AD8C379073E6AC40020A4C7502161 /* Alamofire.framework */,
-				CB14B941CF55CDA553597921B60C1A69 /* Pods_StockeAR.framework */,
-				6C13CD404927C57E511F9AE802B9E45B /* QRCodeReaderViewController.framework */,
-				6E307D6211E9A431F0A5FDA45E336F77 /* SVProgressHUD.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E905528706BF421B7B71C6DB7719CBEC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BA9F64F05DEA3EFED9632F155DFCD55 /* Info.plist */,
-				24822F381A96147A56AB1692BDEF3440 /* QRCodeReaderViewController.modulemap */,
-				CD15F0A857A2373F1097FC827EB3A89C /* QRCodeReaderViewController.xcconfig */,
-				710FF6A16EC80E4658029F188B618F4C /* QRCodeReaderViewController-dummy.m */,
-				6824436D6A959183B8FE67AC65732487 /* QRCodeReaderViewController-prefix.pch */,
-				12309D031E6D69F81D0BE692D63F77A2 /* QRCodeReaderViewController-umbrella.h */,
+				36F03B7446AA4D27B2310E7A6DD1577E /* ESPullToRefresh.modulemap */,
+				2A299E3DC0E20AF828F23E6D5A72851E /* ESPullToRefresh.xcconfig */,
+				8BB25A5E3E8ACE929890EA0AB8270D49 /* ESPullToRefresh-dummy.m */,
+				3B2BDEE7AC4D744BA94928C6F060C6EE /* ESPullToRefresh-prefix.pch */,
+				19A81AF4AD9631BA448B577A713E1067 /* ESPullToRefresh-umbrella.h */,
+				31EBB000E7BFA26551C170B3D8C119E7 /* Info.plist */,
+				5EAB34A506AF86AAFAA7483C5E8EFBD4 /* ResourceBundle-ESPullToRefresh-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/QRCodeReaderViewController";
+			path = "../Target Support Files/ESPullToRefresh";
 			sourceTree = "<group>";
 		};
 		EDDFF3C2B3D2BC41119CBB6F13231293 /* Targets Support Files */ = {
@@ -388,9 +474,55 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F2FB7C0E0816B9099FD86878DC35CC36 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				944BBEE43CB7230E6583824DAF5499AF /* SVIndefiniteAnimatedView.h */,
+				78DA3EB88C2FF2A2DD9E693D5FA9C58F /* SVIndefiniteAnimatedView.m */,
+				720334BDF635E059521F53C2428C5269 /* SVProgressAnimatedView.h */,
+				4331E1C8FAB642BD80E768B01B3E78CC /* SVProgressAnimatedView.m */,
+				230C3B54A72A5A7D9ED83A9ACA0A933D /* SVProgressHUD.h */,
+				67DA848ACC1DC86BBE5E7FFD00006314 /* SVProgressHUD.m */,
+				294E3297B501E73CBD2F8B0B89BAEAEC /* SVRadialGradientLayer.h */,
+				6A373AF1C36DBF66A773A0198DABCFF9 /* SVRadialGradientLayer.m */,
+				401C0B9200F2B515F9053CCFAEF02F79 /* Resources */,
+				727FD7CE49381DE7DF34CB0FAE691A36 /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		19C9B8075F77CD5104E013D66721127C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F767C15E3CE99203E799B8641028CA /* SVIndefiniteAnimatedView.h in Headers */,
+				19ADD07AE38FD2997EFB5BD8DA5CF1A1 /* SVProgressAnimatedView.h in Headers */,
+				AAFCD155298465934F007512442270C5 /* SVProgressHUD-umbrella.h in Headers */,
+				A78BAA2FCA7E25B9C4A965A66B222DD0 /* SVProgressHUD.h in Headers */,
+				65B306204795F2E67B934CCE698C3ED1 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F3F62DC4EC5424D3ED5F7A5256D6756 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ADD4DF3CFFCEE16AF31D89127BDF4F6 /* ESPullToRefresh-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD0F2A58E9084F66588235C4C5574F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768FE3BBD10B6D2416B3AB458EA6E798 /* Pods-StockeAR-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,79 +531,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAE0A5CFC4D45726199FD371A0BD3277 /* Headers */ = {
+		DC4888E30813ED438AD7B60E10BC0763 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B881DB53EE0DD83237DA5B24D3B0FC7 /* Pods-StockeAR-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2FE0B45C3BF851D0C8B45A64035C5ED /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43236DC9E084413D9687ECBB137F7A0C /* QRCameraSwitchButton.h in Headers */,
-				FA530C4405303D3FB201A7C88B3ECF89 /* QRCodeReader.h in Headers */,
-				21D28C1715401D5A8AB091035EA0CD56 /* QRCodeReaderDelegate.h in Headers */,
-				217E470E52BF39A190DADD00A2FD9705 /* QRCodeReaderView.h in Headers */,
-				47EAAA8C6F3E9955BE88FAFA0F2B096C /* QRCodeReaderViewController-umbrella.h in Headers */,
-				FE05AD6E3343EF135EBFE7FDB8AAF1A3 /* QRCodeReaderViewController.h in Headers */,
-				E1E5C4A4155C7AA61BDDFE897DCC896F /* QRToggleTorchButton.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6F64F78F4B36D160588D22E7A33E00C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01BD8085CCAA87464B8DB6259C533366 /* SVIndefiniteAnimatedView.h in Headers */,
-				D90ACD76CE075F26B8F4FE8BCF6B197C /* SVProgressAnimatedView.h in Headers */,
-				DABB054AFEB2046F765CBE1DB9178A13 /* SVProgressHUD-umbrella.h in Headers */,
-				B55AE3447CFAD70D7B741CC54FCF960E /* SVProgressHUD.h in Headers */,
-				CA7CD08DA4CB02CB9EB31B1B97DA012B /* SVRadialGradientLayer.h in Headers */,
+				C0115FE03805D31F705D5945235862C7 /* QRCameraSwitchButton.h in Headers */,
+				F7577431C3B3A45A333FE998F732DE9F /* QRCodeReader.h in Headers */,
+				36B6F3F13CF713B356C770A38D897234 /* QRCodeReaderDelegate.h in Headers */,
+				D5F6D371D9F03FD0ED849BA823890CEE /* QRCodeReaderView.h in Headers */,
+				039013083E037332507A44A7D54D7DF9 /* QRCodeReaderViewController-umbrella.h in Headers */,
+				2A3DE584460F2D23B59BB6262001932B /* QRCodeReaderViewController.h in Headers */,
+				1B0BC13919926E8B0C6289F3FE7D4F53 /* QRToggleTorchButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		431265DC35C0B22DE7369422C06FA78B /* Pods-StockeAR */ = {
+		2AAC70897269009701EA2ADFE2CB50C2 /* ESPullToRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64DCF708DD156215ABF6378B981D28E2 /* Build configuration list for PBXNativeTarget "Pods-StockeAR" */;
+			buildConfigurationList = 329A4C3EB82AE3A508EC155A9E8C66E7 /* Build configuration list for PBXNativeTarget "ESPullToRefresh" */;
 			buildPhases = (
-				57F56021518551C1BDF208ADD208FAAB /* Sources */,
-				498DB7D514F42F43884DDA6E238EF8C0 /* Frameworks */,
-				BAE0A5CFC4D45726199FD371A0BD3277 /* Headers */,
+				17703F86AC58E7ED19B65F083AC62AF3 /* Sources */,
+				A9FE4E5F7654F71B166B6A85DDE758E9 /* Frameworks */,
+				ACD8CDFAB97EA147A962437DAE9C37F9 /* Resources */,
+				1F3F62DC4EC5424D3ED5F7A5256D6756 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				280FFCDDCD0365ADD8C441647AB0E4C7 /* PBXTargetDependency */,
-				56EA51E44ABCB95D5E27CD81549C0EA1 /* PBXTargetDependency */,
-				BFD94C9831CAF139AE2FAACA554E6396 /* PBXTargetDependency */,
+				050464EF554ED2A8E2FB28115A64E323 /* PBXTargetDependency */,
+			);
+			name = ESPullToRefresh;
+			productName = ESPullToRefresh;
+			productReference = 8D671426128C51EB84C368AC9BECD509 /* ESPullToRefresh.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		56572DEC8FD857A36DCC912D7529DD1F /* Pods-StockeAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA618ED7CF0CE3194AAE707A07E8AA5 /* Build configuration list for PBXNativeTarget "Pods-StockeAR" */;
+			buildPhases = (
+				0393C30C4D7C65425E7F4246344FACEE /* Sources */,
+				7C6944BD28BCEF0EBA7AE1924E9E2810 /* Frameworks */,
+				8BD0F2A58E9084F66588235C4C5574F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD4E18B204B5E2EDD9EE6ED830F5291E /* PBXTargetDependency */,
+				3D111677A93A8854DCA46C97FCC262DC /* PBXTargetDependency */,
+				C0750895AFEB74D7722B99FDEF123F39 /* PBXTargetDependency */,
+				7EDA0ED72DA60A4E3085E210DCD7F3B1 /* PBXTargetDependency */,
 			);
 			name = "Pods-StockeAR";
 			productName = "Pods-StockeAR";
-			productReference = CB14B941CF55CDA553597921B60C1A69 /* Pods_StockeAR.framework */;
+			productReference = 8EFADE9D9B76FF087AD8B90C7CC56185 /* Pods_StockeAR.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4829C90539E9E4D9DFB4D27C693B28DB /* SVProgressHUD */ = {
+		6BB92BC13278A8C0FD6823C73E3A42AC /* QRCodeReaderViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0F389F175503FD58FCA84291E259BC1 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildConfigurationList = 3ADCD1C68FBB88F5BF6FA08F9818B12E /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */;
 			buildPhases = (
-				961D6D61103D7EF2E69EFF0642E9360C /* Sources */,
-				096767CC9C9A64D8ED32AB8AD573612C /* Frameworks */,
-				E6F64F78F4B36D160588D22E7A33E00C /* Headers */,
-				84FF007DD9EDD8BF151ABF2728D29B98 /* Resources */,
+				0BBA2F9C7FBFC7FB2D3D72779AD196E7 /* Sources */,
+				3E74090285923D1801ACDD66C0A5EAC6 /* Frameworks */,
+				DC4888E30813ED438AD7B60E10BC0763 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SVProgressHUD;
-			productName = SVProgressHUD;
-			productReference = 6E307D6211E9A431F0A5FDA45E336F77 /* SVProgressHUD.framework */;
+			name = QRCodeReaderViewController;
+			productName = QRCodeReaderViewController;
+			productReference = 16C91CB6DD8DE236EB78576238546A3C /* QRCodeReaderViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -488,24 +619,42 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = CF4AD8C379073E6AC40020A4C7502161 /* Alamofire.framework */;
+			productReference = D870B95847ACD472098FDAD8097C1C5F /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AA32D066D2B3652718EFAD740E8DC8D7 /* QRCodeReaderViewController */ = {
+		D1CFA156DF9AD56A6424A8B5DDDCC42B /* ESPullToRefresh-ESPullToRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B6B13FB35FB7B3F12FFDC0718FE89D4 /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */;
+			buildConfigurationList = F7B105A7363973121A762C314EFE22CE /* Build configuration list for PBXNativeTarget "ESPullToRefresh-ESPullToRefresh" */;
 			buildPhases = (
-				8913CCC4307E4A9E78C9510448C52308 /* Sources */,
-				31A4EE056CD725BD5B7BBD24B1C86795 /* Frameworks */,
-				E2FE0B45C3BF851D0C8B45A64035C5ED /* Headers */,
+				0154A901754A51AADE43518B27693A0A /* Sources */,
+				3C2605F9DCE639FDF98196F1C827D59A /* Frameworks */,
+				70398DC1453AB3DECBE8F3121BCC150C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = QRCodeReaderViewController;
-			productName = QRCodeReaderViewController;
-			productReference = 6C13CD404927C57E511F9AE802B9E45B /* QRCodeReaderViewController.framework */;
+			name = "ESPullToRefresh-ESPullToRefresh";
+			productName = "ESPullToRefresh-ESPullToRefresh";
+			productReference = A9CBF24B8AC75C1464B0FE1CEF9CD937 /* ESPullToRefresh.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F673184EDD43C0D2CE7911730B7EE426 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A34B8839E1A059800B1E6E7BF39D16 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				EA78648B5CE00E7A9042BD3789C01152 /* Sources */,
+				B0CACB0318CCAC7B50D3D988F57BFE56 /* Frameworks */,
+				19C9B8075F77CD5104E013D66721127C /* Headers */,
+				238A8F1B0BF194FE6FE8FA772CC4C4DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 67C6364489051090CDFA17BD9E9CAB4C /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -525,30 +674,92 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E0EEA86D870E365C2A0DCB677A1A9E3C /* Products */;
+			productRefGroup = 4A94D4C8B0EAA5483784BE57EC68A023 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
-				431265DC35C0B22DE7369422C06FA78B /* Pods-StockeAR */,
-				AA32D066D2B3652718EFAD740E8DC8D7 /* QRCodeReaderViewController */,
-				4829C90539E9E4D9DFB4D27C693B28DB /* SVProgressHUD */,
+				2AAC70897269009701EA2ADFE2CB50C2 /* ESPullToRefresh */,
+				D1CFA156DF9AD56A6424A8B5DDDCC42B /* ESPullToRefresh-ESPullToRefresh */,
+				56572DEC8FD857A36DCC912D7529DD1F /* Pods-StockeAR */,
+				6BB92BC13278A8C0FD6823C73E3A42AC /* QRCodeReaderViewController */,
+				F673184EDD43C0D2CE7911730B7EE426 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		84FF007DD9EDD8BF151ABF2728D29B98 /* Resources */ = {
+		238A8F1B0BF194FE6FE8FA772CC4C4DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CB59C4C0561EC08700AED5CA7350359 /* SVProgressHUD.bundle in Resources */,
+				937FC9F299D5C20662FDEA8B3805B768 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70398DC1453AB3DECBE8F3121BCC150C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051F31D497FFAF1441C3117C8114CB73 /* icon_pull_to_refresh_arrow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACD8CDFAB97EA147A962437DAE9C37F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EC8F0C7C0255AEE6E240B0E1189AB6 /* ESPullToRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0154A901754A51AADE43518B27693A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0393C30C4D7C65425E7F4246344FACEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D007E9A5D7A53D2AB782900B2D7741EB /* Pods-StockeAR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBA2F9C7FBFC7FB2D3D72779AD196E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CA0F0ED309B33CE47DC288025166B3 /* QRCameraSwitchButton.m in Sources */,
+				C1B040536202329BD6C586F71AE3CDA8 /* QRCodeReader.m in Sources */,
+				DB6E282D02A96A836C04CC8FF02DE757 /* QRCodeReaderView.m in Sources */,
+				D2A82DEB631CE6C4C1CED75486637FE6 /* QRCodeReaderViewController-dummy.m in Sources */,
+				CEFE878D07A28804A73DDAB5F6C6C60C /* QRCodeReaderViewController.m in Sources */,
+				F15B794587FB22D9B2C782DC7261819B /* QRToggleTorchButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17703F86AC58E7ED19B65F083AC62AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E6D8EBF2966F5203D842C515E45E64 /* ES.swift in Sources */,
+				7F71FE7F19DF3C9245F4ECCCD1661A81 /* ESPullToRefresh+Manager.swift in Sources */,
+				2112BF6E1539CE46D82052A5772FB44B /* ESPullToRefresh-dummy.m in Sources */,
+				17A0ADC7BC64D6DB74386B63E4249DA4 /* ESPullToRefresh.swift in Sources */,
+				BEC3C5C24840F5394909F85E9F5B0EC0 /* ESRefreshAnimator.swift in Sources */,
+				089D6C19F9A86A0D468C9179CDA29B46 /* ESRefreshComponent.swift in Sources */,
+				F39A32593CD6946D80EC9908617FB417 /* ESRefreshFooterAnimator.swift in Sources */,
+				AC2580A8426D2A0899714238142E1376 /* ESRefreshHeaderAnimator.swift in Sources */,
+				341330923587FE231DEA3915F96A8C72 /* ESRefreshProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32B9974868188C4803318E36329C87FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -574,172 +785,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57F56021518551C1BDF208ADD208FAAB /* Sources */ = {
+		EA78648B5CE00E7A9042BD3789C01152 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB8524F0ABEC3A672E2A6631DB5D6450 /* Pods-StockeAR-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8913CCC4307E4A9E78C9510448C52308 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				757814229A6572A6353EBD8FDF023584 /* QRCameraSwitchButton.m in Sources */,
-				9DC5970EEC7FFDC1C6A1D19A0681F03E /* QRCodeReader.m in Sources */,
-				E10F038C52BFE6E8ABD31AB464E7C4F6 /* QRCodeReaderView.m in Sources */,
-				C755B0CE69D92C52951E189425E11F11 /* QRCodeReaderViewController-dummy.m in Sources */,
-				EE73492DF1F774B064B7C7F8E12B9FF4 /* QRCodeReaderViewController.m in Sources */,
-				C7D7D4449240038E637548BD312C8715 /* QRToggleTorchButton.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		961D6D61103D7EF2E69EFF0642E9360C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8AD0DD48CD8D18C8272C50AA8F86ACE1 /* SVIndefiniteAnimatedView.m in Sources */,
-				F73772D13A6DDBF84E63664788395772 /* SVProgressAnimatedView.m in Sources */,
-				CDB755830DB50AF8D7EAFF4BB08C85A1 /* SVProgressHUD-dummy.m in Sources */,
-				36F7B7679E3B372753318321D75678CB /* SVProgressHUD.m in Sources */,
-				16B347B19B147B5B504DF12E00DC2489 /* SVRadialGradientLayer.m in Sources */,
+				7D6E9736168FC14FBBFD516B90AAD316 /* SVIndefiniteAnimatedView.m in Sources */,
+				CE018498472F732466D59EC65D6A4EE4 /* SVProgressAnimatedView.m in Sources */,
+				168C54B17FC917FAA47E7419447E4316 /* SVProgressHUD-dummy.m in Sources */,
+				A3903F46B7C4468713451748C9CE895F /* SVProgressHUD.m in Sources */,
+				23A240244E4881D33C3B74328653BA24 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		280FFCDDCD0365ADD8C441647AB0E4C7 /* PBXTargetDependency */ = {
+		050464EF554ED2A8E2FB28115A64E323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ESPullToRefresh-ESPullToRefresh";
+			target = D1CFA156DF9AD56A6424A8B5DDDCC42B /* ESPullToRefresh-ESPullToRefresh */;
+			targetProxy = 9A796E68171A2606CA170B39634C90BA /* PBXContainerItemProxy */;
+		};
+		3D111677A93A8854DCA46C97FCC262DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ESPullToRefresh;
+			target = 2AAC70897269009701EA2ADFE2CB50C2 /* ESPullToRefresh */;
+			targetProxy = ECD308C1EAE8F51080BF589F3DA3E85C /* PBXContainerItemProxy */;
+		};
+		7EDA0ED72DA60A4E3085E210DCD7F3B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = F673184EDD43C0D2CE7911730B7EE426 /* SVProgressHUD */;
+			targetProxy = A6084E45CC64287E7D78BCF8BABD3E2E /* PBXContainerItemProxy */;
+		};
+		C0750895AFEB74D7722B99FDEF123F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QRCodeReaderViewController;
+			target = 6BB92BC13278A8C0FD6823C73E3A42AC /* QRCodeReaderViewController */;
+			targetProxy = A34F6462C2A5904E9F17C85965F2FA96 /* PBXContainerItemProxy */;
+		};
+		DD4E18B204B5E2EDD9EE6ED830F5291E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 6AD84C580253B5B1BE4A5B6BCC0D9A52 /* PBXContainerItemProxy */;
-		};
-		56EA51E44ABCB95D5E27CD81549C0EA1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = QRCodeReaderViewController;
-			target = AA32D066D2B3652718EFAD740E8DC8D7 /* QRCodeReaderViewController */;
-			targetProxy = 3456DA28D716CCEB9F215309B3C6C401 /* PBXContainerItemProxy */;
-		};
-		BFD94C9831CAF139AE2FAACA554E6396 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = 4829C90539E9E4D9DFB4D27C693B28DB /* SVProgressHUD */;
-			targetProxy = 10176F907CDE3E5E040B20CA59F419AA /* PBXContainerItemProxy */;
+			targetProxy = 6B90A0B769DB6B48A62D5AAB223EB5FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		41E4A3B436BBF13A17EDB1EE2E978F84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD15F0A857A2373F1097FC827EB3A89C /* QRCodeReaderViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QRCodeReaderViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = QRCodeReaderViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		441300C5FC4B5A08DA02C97A98A9AC30 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3673F46BA9131F0C669ADBB0D5974FE2 /* Alamofire.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4CB68CD5E672D74AE2E5C53674593D8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6CEE6376DB0CB7BB7C60140EB589B0C /* Pods-StockeAR.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-StockeAR/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StockeAR/Pods-StockeAR.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_StockeAR;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		73A584213BB733677643102B54431744 /* Release */ = {
+		11EC58EA14FA705EC494CF02CE96EFB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D2E142DB3D87BBA78387234D9699DE0 /* Pods-StockeAR.release.xcconfig */;
 			buildSettings = {
@@ -777,43 +871,9 @@
 			};
 			name = Release;
 		};
-		784A9F7B6B9D69B67946391B75F60BDB /* Release */ = {
+		15D3A44E99C053548902325C6B1E78D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D018609914B2657CB0EB1ADC13B454C5 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7CA767A55B896598F27A326C56A3A0C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D018609914B2657CB0EB1ADC13B454C5 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 2A299E3DC0E20AF828F23E6D5A72851E /* ESPullToRefresh.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -827,14 +887,84 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ESPullToRefresh/ESPullToRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ESPullToRefresh/ESPullToRefresh.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SVProgressHUD;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		441300C5FC4B5A08DA02C97A98A9AC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01EC72BC2F3782AF8AD3DA3A6E2884B0 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75C789CB1A9D5DE6F6089926A0246AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF74C59E91B3D78BFD6C22D285295F4 /* QRCodeReaderViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCodeReaderViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QRCodeReaderViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -842,6 +972,23 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		933F112425BB7D46EA624D043D675905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A299E3DC0E20AF828F23E6D5A72851E /* ESPullToRefresh.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh/ResourceBundle-ESPullToRefresh-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -894,9 +1041,48 @@
 			};
 			name = Debug;
 		};
+		A131B8A40A775B49B259793CCECEBBA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6CEE6376DB0CB7BB7C60140EB589B0C /* Pods-StockeAR.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-StockeAR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StockeAR/Pods-StockeAR.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_StockeAR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A516FB1A3CF0C0E38E6E12023BE62772 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3673F46BA9131F0C669ADBB0D5974FE2 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 01EC72BC2F3782AF8AD3DA3A6E2884B0 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -928,6 +1114,109 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B90E0977D96C37272AB3E76F51EF725F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36F942482F2BC77B031923B5FEAFAD9 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCCCDF9DD22374D9B6775ED17D2D83DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A299E3DC0E20AF828F23E6D5A72851E /* ESPullToRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ESPullToRefresh/ESPullToRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ESPullToRefresh/ESPullToRefresh.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C021E2C411250437BD9545E3CE0DD48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36F942482F2BC77B031923B5FEAFAD9 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		C03B8870130C98D1B02B59D003687524 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -973,9 +1262,9 @@
 			};
 			name = Release;
 		};
-		E3C32D0D52AC871535505AC54E806B75 /* Debug */ = {
+		DF59CAB7066F496D60A213D844C5B518 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD15F0A857A2373F1097FC827EB3A89C /* QRCodeReaderViewController.xcconfig */;
+			baseConfigurationReference = EAF74C59E91B3D78BFD6C22D285295F4 /* QRCodeReaderViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1007,14 +1296,58 @@
 			};
 			name = Debug;
 		};
+		E724945B2B8800CAA8AF81EC54AA147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A299E3DC0E20AF828F23E6D5A72851E /* ESPullToRefresh.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ESPullToRefresh";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ESPullToRefresh/ResourceBundle-ESPullToRefresh-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ESPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		08A34B8839E1A059800B1E6E7BF39D16 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B90E0977D96C37272AB3E76F51EF725F /* Debug */,
+				C021E2C411250437BD9545E3CE0DD48A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */,
 				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		329A4C3EB82AE3A508EC155A9E8C66E7 /* Build configuration list for PBXNativeTarget "ESPullToRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15D3A44E99C053548902325C6B1E78D4 /* Debug */,
+				BCCCDF9DD22374D9B6775ED17D2D83DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ADCD1C68FBB88F5BF6FA08F9818B12E /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF59CAB7066F496D60A213D844C5B518 /* Debug */,
+				75C789CB1A9D5DE6F6089926A0246AE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1028,29 +1361,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64DCF708DD156215ABF6378B981D28E2 /* Build configuration list for PBXNativeTarget "Pods-StockeAR" */ = {
+		ACA618ED7CF0CE3194AAE707A07E8AA5 /* Build configuration list for PBXNativeTarget "Pods-StockeAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4CB68CD5E672D74AE2E5C53674593D8A /* Debug */,
-				73A584213BB733677643102B54431744 /* Release */,
+				A131B8A40A775B49B259793CCECEBBA8 /* Debug */,
+				11EC58EA14FA705EC494CF02CE96EFB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B6B13FB35FB7B3F12FFDC0718FE89D4 /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */ = {
+		F7B105A7363973121A762C314EFE22CE /* Build configuration list for PBXNativeTarget "ESPullToRefresh-ESPullToRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E3C32D0D52AC871535505AC54E806B75 /* Debug */,
-				41E4A3B436BBF13A17EDB1EE2E978F84 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0F389F175503FD58FCA84291E259BC1 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7CA767A55B896598F27A326C56A3A0C1 /* Debug */,
-				784A9F7B6B9D69B67946391B75F60BDB /* Release */,
+				933F112425BB7D46EA624D043D675905 /* Debug */,
+				E724945B2B8800CAA8AF81EC54AA147D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

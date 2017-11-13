@@ -15,6 +15,15 @@ class EntryViewController: UIViewController, UITableViewDelegate, UITableViewDat
         SVProgressHUD.show()
         loadEntries()
         loadHeader()
+        addPullToRefresh()
+    }
+    
+    func addPullToRefresh() {
+        self.tableView.es.addPullToRefresh {
+            [unowned self] in
+            self.loadEntries()
+            self.tableView.es.stopPullToRefresh(ignoreDate: true)
+        }
     }
     
     func loadEntries() {
@@ -23,7 +32,8 @@ class EntryViewController: UIViewController, UITableViewDelegate, UITableViewDat
             if let entriesList = entries {
                 self.reloadData(entries: entriesList)
             } else {
-                print("Error")
+                self.reloadData(entries: [])
+                UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
             }
         }
     }

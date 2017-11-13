@@ -15,6 +15,15 @@ class EgressViewController: UIViewController, UITableViewDataSource, UITableView
         SVProgressHUD.show()
         loadEgresses()
         loadHeader()
+        addPullToRefresh()
+    }
+    
+    func addPullToRefresh() {
+        self.tableView.es.addPullToRefresh {
+            [unowned self] in
+            self.loadEgresses()
+            self.tableView.es.stopPullToRefresh(ignoreDate: true)
+        }
     }
     
     func loadEgresses() {
@@ -23,7 +32,8 @@ class EgressViewController: UIViewController, UITableViewDataSource, UITableView
             if let egressesList = egresses {
                 self.reloadData(egresses: egressesList)
             } else {
-                print("Error")
+                self.reloadData(egresses: [])
+                UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
             }
         }
     }
