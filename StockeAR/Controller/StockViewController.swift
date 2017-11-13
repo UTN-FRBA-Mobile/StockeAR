@@ -1,12 +1,13 @@
 import SVProgressHUD
 import UIKit
 import ESPullToRefresh
+import UserNotifications
 
 protocol SearchStockDelegate: NSObjectProtocol {
     func didSelect(product: Product)
 }
 
-class StockViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class StockViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UNUserNotificationCenterDelegate {
     
     weak var delegate: SearchStockDelegate?
     @IBOutlet var tableView: UITableView!
@@ -24,6 +25,31 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
         loadStock()
         loadHeader()
         addPullToRefresh()
+        self.becomeFirstResponder()
+    }
+    
+    override var canBecomeFirstResponder: Bool {
+        get {
+            return true
+        }
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            let notification = UNMutableNotificationContent()
+            notification.title = "StockAR"
+            notification.body = "Nueva alta"
+            let notificationTrigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 3.0, repeats: false)
+            
+            let request = UNNotificationRequest(identifier: "alta", content: notification, trigger: notificationTrigger)
+            UNUserNotificationCenter.current().delegate = self
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        }
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        loadStock()
+        completionHandler()
     }
     
     func addPullToRefresh() {

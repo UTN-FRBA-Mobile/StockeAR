@@ -43,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		243DFA781FBA0AB9008AE24C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		24B8A3CD1FB91707008CD788 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = StockeAR/Model/Entry.swift; sourceTree = SOURCE_ROOT; };
 		24B8A3CE1FB91707008CD788 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = StockeAR/Model/Product.swift; sourceTree = SOURCE_ROOT; };
 		24B8A3D11FB91715008CD788 /* ProductTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductTableHeaderView.xib; path = StockeAR/View/ProductTableHeaderView.xib; sourceTree = SOURCE_ROOT; };
@@ -187,6 +188,7 @@
 		6B08FD8EE76F0AB2A76BFF3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				243DFA781FBA0AB9008AE24C /* UserNotifications.framework */,
 				E5745E3030221367F199E7DA /* Pods_StockeAR.framework */,
 			);
 			name = Frameworks;
@@ -310,7 +312,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/ESPullToRefresh/ESPullToRefresh.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/ESPullToRefresh/ESPullToRefresh.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
