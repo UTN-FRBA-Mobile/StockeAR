@@ -1,13 +1,19 @@
 import SVProgressHUD
 import UIKit
 
+protocol SearchStockDelegate: NSObjectProtocol {
+    func didSelect(product: Product)
+}
+
 class StockViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
+    weak var delegate: SearchStockDelegate?
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
     let cellReuseIdentifier = "ProductCell"
     var products: Array<Product> = []
     var productsFiltered: Array<Product> = []
+    var shouldReturnProduct: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,6 +89,18 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if shouldReturnProduct {
+            let product: Product
+            if shouldFilter() {
+                product = self.productsFiltered[indexPath.row]
+            }
+            else {
+                product = self.products[indexPath.row]
+            }
+            self.navigationController?.popViewController(animated: true)
+            self.navigationController?.isNavigationBarHidden = false
+            delegate?.didSelect(product: product)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

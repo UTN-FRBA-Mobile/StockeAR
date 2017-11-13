@@ -48,7 +48,8 @@ class EgressViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @objc func newEgress() {
-        
+        let newEgressViewController = NewEgressViewController(isLocal: false)
+        navigationController?.pushViewController(newEgressViewController!, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

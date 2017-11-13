@@ -48,7 +48,8 @@ class MovementsViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     @objc func newMovement() {
-        
+        let newEgressViewController = NewEgressViewController(isLocal: true)
+        navigationController?.pushViewController(newEgressViewController!, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

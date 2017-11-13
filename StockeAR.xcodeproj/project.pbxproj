@@ -34,6 +34,8 @@
 		24B8A4001FB91A0A008CD788 /* MovementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3FE1FB91A0A008CD788 /* MovementTableViewCell.swift */; };
 		24B8A4011FB91A0A008CD788 /* MovementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3FF1FB91A0A008CD788 /* MovementTableViewCell.xib */; };
 		24B8A4031FB91A84008CD788 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A4021FB91A84008CD788 /* Movement.swift */; };
+		24B8A4061FB92BD5008CD788 /* NewEgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A4041FB92BD5008CD788 /* NewEgressViewController.swift */; };
+		24B8A4071FB92BD5008CD788 /* NewEgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A4051FB92BD5008CD788 /* NewEgressViewController.xib */; };
 		24E8A6E81F79BA0C00280D55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */; };
 		24E8A6EF1F79BA0C00280D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */; };
 		24E8A6F21F79BA0C00280D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6F01F79BA0C00280D55 /* LaunchScreen.storyboard */; };
@@ -68,6 +70,8 @@
 		24B8A3FE1FB91A0A008CD788 /* MovementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovementTableViewCell.swift; path = StockeAR/View/MovementTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		24B8A3FF1FB91A0A008CD788 /* MovementTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovementTableViewCell.xib; path = StockeAR/View/MovementTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		24B8A4021FB91A84008CD788 /* Movement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movement.swift; path = StockeAR/Model/Movement.swift; sourceTree = SOURCE_ROOT; };
+		24B8A4041FB92BD5008CD788 /* NewEgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewEgressViewController.swift; path = StockeAR/Controller/NewEgressViewController.swift; sourceTree = SOURCE_ROOT; };
+		24B8A4051FB92BD5008CD788 /* NewEgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewEgressViewController.xib; path = StockeAR/Controller/NewEgressViewController.xib; sourceTree = SOURCE_ROOT; };
 		24E8A6E41F79BA0C00280D55 /* StockeAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockeAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,8 +102,7 @@
 				24B8A3FC1FB91979008CD788 /* Egress.swift */,
 				24B8A4021FB91A84008CD788 /* Movement.swift */,
 			);
-			name = Model;
-			path = "New Group";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		24B8A3CB1FB916E0008CD788 /* View */ = {
@@ -118,8 +121,7 @@
 				24B8A3FE1FB91A0A008CD788 /* MovementTableViewCell.swift */,
 				24B8A3FF1FB91A0A008CD788 /* MovementTableViewCell.xib */,
 			);
-			name = View;
-			path = "New Group1";
+			path = View;
 			sourceTree = "<group>";
 		};
 		24B8A3CC1FB916E8008CD788 /* Controller */ = {
@@ -133,11 +135,12 @@
 				24B8A3E31FB91723008CD788 /* MovementsViewController.xib */,
 				24B8A3E01FB91722008CD788 /* NewEntryViewController.swift */,
 				24B8A3DD1FB91722008CD788 /* NewEntryViewController.xib */,
+				24B8A4041FB92BD5008CD788 /* NewEgressViewController.swift */,
+				24B8A4051FB92BD5008CD788 /* NewEgressViewController.xib */,
 				24B8A3E11FB91722008CD788 /* StockViewController.swift */,
 				24B8A3E41FB91723008CD788 /* StockViewController.xib */,
 			);
-			name = Controller;
-			path = "New Group2";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		24B8A3F11FB91749008CD788 /* Helpers */ = {
@@ -275,6 +278,7 @@
 				24B8A3E71FB91723008CD788 /* NewEntryViewController.xib in Resources */,
 				24B8A4011FB91A0A008CD788 /* MovementTableViewCell.xib in Resources */,
 				24E8A6EF1F79BA0C00280D55 /* Assets.xcassets in Resources */,
+				24B8A4071FB92BD5008CD788 /* NewEgressViewController.xib in Resources */,
 				24B8A3EE1FB91723008CD788 /* StockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +358,7 @@
 				24B8A3E81FB91723008CD788 /* MovementsViewController.swift in Sources */,
 				24B8A4031FB91A84008CD788 /* Movement.swift in Sources */,
 				24E8A6E81F79BA0C00280D55 /* AppDelegate.swift in Sources */,
+				24B8A4061FB92BD5008CD788 /* NewEgressViewController.swift in Sources */,
 				24B8A3EC1FB91723008CD788 /* EntryViewController.swift in Sources */,
 				24B8A3EA1FB91723008CD788 /* NewEntryViewController.swift in Sources */,
 				24B8A3D01FB91707008CD788 /* Product.swift in Sources */,

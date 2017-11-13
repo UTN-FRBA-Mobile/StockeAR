@@ -3,13 +3,17 @@ import UIKit
 class EntryTableViewCell: UITableViewCell {
     
     @IBOutlet var dateLabel: UILabel!
-    @IBOutlet var providerLabel: UILabel!
+    @IBOutlet var codeLabel: UILabel!
     @IBOutlet var receptionLabel: UILabel!
+    @IBOutlet var amountLabel: UILabel!
+    @IBOutlet var batchLabel: UILabel!
     
     func setup(entry: Entry) {
         self.dateLabel.text = entry.date
-        self.providerLabel.text = entry.provider
+        self.codeLabel.text = entry.code
         self.receptionLabel.text = entry.receptionId
+        self.amountLabel.text = entry.amount
+        self.batchLabel.text = entry.batch
     }
     
 }

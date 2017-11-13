@@ -141,5 +141,43 @@ final class DataSource: NSObject {
                             completionHandler(nil)
         }
     }
+    
+    func newMovement(product: Product, amount: String, newLocation: String, completionHandler: @escaping (Error?) -> ()) {
+        let header = ["content-type" : "application/json"]
+        let parameters = ["id":product.productId, "batch":product.batch, "amount":amount, "new_location":newLocation]
+        Alamofire.request(DataSource.newEntryApiUrl,
+                          method: .post,
+                          parameters: parameters,
+                          encoding: JSONEncoding.default,
+                          headers: header).responseJSON {
+                            response in
+                            
+                            guard response.result.isSuccess else {
+                                completionHandler(response.result.error)
+                                return
+                            }
+                            
+                            completionHandler(nil)
+        }
+    }
+    
+    func newEgress(product: Product, amount: String, client: String, completionHandler: @escaping (Error?) -> ()) {
+        let header = ["content-type" : "application/json"]
+        let parameters = ["id":product.productId, "batch":product.batch, "amount":amount, "client":client]
+        Alamofire.request(DataSource.newEntryApiUrl,
+                          method: .post,
+                          parameters: parameters,
+                          encoding: JSONEncoding.default,
+                          headers: header).responseJSON {
+                            response in
+                            
+                            guard response.result.isSuccess else {
+                                completionHandler(response.result.error)
+                                return
+                            }
+                            
+                            completionHandler(nil)
+        }
+    }
 
 }
