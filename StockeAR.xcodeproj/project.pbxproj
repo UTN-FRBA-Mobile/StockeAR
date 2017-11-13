@@ -7,56 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		246CB1FC1F9D3A0B00053F64 /* EgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB1FA1F9D3A0B00053F64 /* EgressViewController.swift */; };
-		246CB1FD1F9D3A0B00053F64 /* EgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246CB1FB1F9D3A0B00053F64 /* EgressViewController.xib */; };
-		246CB2001F9D3A3D00053F64 /* MovementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB1FE1F9D3A3D00053F64 /* MovementsViewController.swift */; };
-		246CB2011F9D3A3D00053F64 /* MovementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246CB1FF1F9D3A3D00053F64 /* MovementsViewController.xib */; };
-		246CB2041F9D3D3100053F64 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB2021F9D3D3100053F64 /* StockViewController.swift */; };
-		246CB2051F9D3D3100053F64 /* StockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246CB2031F9D3D3100053F64 /* StockViewController.xib */; };
-		246CB2071F9D4E4900053F64 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB2061F9D4E4900053F64 /* DataSource.swift */; };
-		246CB2091F9D4EAB00053F64 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB2081F9D4EAB00053F64 /* Product.swift */; };
-		246CB20C1F9D58B100053F64 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246CB20A1F9D58B100053F64 /* ProductTableViewCell.swift */; };
-		246CB20D1F9D58B100053F64 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246CB20B1F9D58B100053F64 /* ProductTableViewCell.xib */; };
-		247D08A81FB799E000556699 /* ProductTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247D08A71FB799E000556699 /* ProductTableHeaderView.xib */; };
-		247D08AB1FB7A0F800556699 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247D08A91FB7A0F800556699 /* NewEntryViewController.swift */; };
-		247D08AC1FB7A0F800556699 /* NewEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247D08AA1FB7A0F800556699 /* NewEntryViewController.xib */; };
-		24B3F0BB1FB8F14A005FFA87 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F0BA1FB8F14A005FFA87 /* Entry.swift */; };
-		24B3F0BF1FB8F461005FFA87 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F0BC1FB8F461005FFA87 /* EntryTableViewCell.swift */; };
-		24B3F0C01FB8F461005FFA87 /* EntryTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B3F0BD1FB8F461005FFA87 /* EntryTableHeaderView.xib */; };
-		24B3F0C11FB8F461005FFA87 /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B3F0BE1FB8F461005FFA87 /* EntryTableViewCell.xib */; };
+		24B8A3CF1FB91707008CD788 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3CD1FB91707008CD788 /* Entry.swift */; };
+		24B8A3D01FB91707008CD788 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3CE1FB91707008CD788 /* Product.swift */; };
+		24B8A3D71FB91715008CD788 /* ProductTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3D11FB91715008CD788 /* ProductTableHeaderView.xib */; };
+		24B8A3D81FB91715008CD788 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3D21FB91715008CD788 /* ProductTableViewCell.xib */; };
+		24B8A3D91FB91715008CD788 /* EntryTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3D31FB91715008CD788 /* EntryTableHeaderView.xib */; };
+		24B8A3DA1FB91715008CD788 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3D41FB91715008CD788 /* EntryTableViewCell.swift */; };
+		24B8A3DB1FB91715008CD788 /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3D51FB91715008CD788 /* EntryTableViewCell.xib */; };
+		24B8A3DC1FB91715008CD788 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3D61FB91715008CD788 /* ProductTableViewCell.swift */; };
+		24B8A3E71FB91723008CD788 /* NewEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3DD1FB91722008CD788 /* NewEntryViewController.xib */; };
+		24B8A3E81FB91723008CD788 /* MovementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3DE1FB91722008CD788 /* MovementsViewController.swift */; };
+		24B8A3E91FB91723008CD788 /* EgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3DF1FB91722008CD788 /* EgressViewController.xib */; };
+		24B8A3EA1FB91723008CD788 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3E01FB91722008CD788 /* NewEntryViewController.swift */; };
+		24B8A3EB1FB91723008CD788 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3E11FB91722008CD788 /* StockViewController.swift */; };
+		24B8A3EC1FB91723008CD788 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3E21FB91723008CD788 /* EntryViewController.swift */; };
+		24B8A3ED1FB91723008CD788 /* MovementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3E31FB91723008CD788 /* MovementsViewController.xib */; };
+		24B8A3EE1FB91723008CD788 /* StockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3E41FB91723008CD788 /* StockViewController.xib */; };
+		24B8A3EF1FB91723008CD788 /* EgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3E51FB91723008CD788 /* EgressViewController.swift */; };
+		24B8A3F01FB91723008CD788 /* EntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3E61FB91723008CD788 /* EntryViewController.xib */; };
+		24B8A3F31FB9175E008CD788 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3F21FB9175E008CD788 /* DataSource.swift */; };
+		24B8A3F61FB91885008CD788 /* EgressTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3F41FB91885008CD788 /* EgressTableHeaderView.xib */; };
+		24B8A3F71FB91885008CD788 /* MovementTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3F51FB91885008CD788 /* MovementTableHeaderView.xib */; };
+		24B8A3FA1FB91922008CD788 /* EgressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3F81FB91922008CD788 /* EgressTableViewCell.xib */; };
+		24B8A3FB1FB91922008CD788 /* EgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3F91FB91922008CD788 /* EgressTableViewCell.swift */; };
+		24B8A3FD1FB91979008CD788 /* Egress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3FC1FB91979008CD788 /* Egress.swift */; };
+		24B8A4001FB91A0A008CD788 /* MovementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A3FE1FB91A0A008CD788 /* MovementTableViewCell.swift */; };
+		24B8A4011FB91A0A008CD788 /* MovementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8A3FF1FB91A0A008CD788 /* MovementTableViewCell.xib */; };
+		24B8A4031FB91A84008CD788 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A4021FB91A84008CD788 /* Movement.swift */; };
 		24E8A6E81F79BA0C00280D55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */; };
-		24E8A6EA1F79BA0C00280D55 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8A6E91F79BA0C00280D55 /* EntryViewController.swift */; };
 		24E8A6EF1F79BA0C00280D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */; };
 		24E8A6F21F79BA0C00280D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6F01F79BA0C00280D55 /* LaunchScreen.storyboard */; };
-		24E8A6FA1F79BA3F00280D55 /* EntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A6F91F79BA3F00280D55 /* EntryViewController.xib */; };
 		7DDED13FD8B6C79AA5A090C0 /* Pods_StockeAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5745E3030221367F199E7DA /* Pods_StockeAR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		246CB1FA1F9D3A0B00053F64 /* EgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgressViewController.swift; sourceTree = "<group>"; };
-		246CB1FB1F9D3A0B00053F64 /* EgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EgressViewController.xib; sourceTree = "<group>"; };
-		246CB1FE1F9D3A3D00053F64 /* MovementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsViewController.swift; sourceTree = "<group>"; };
-		246CB1FF1F9D3A3D00053F64 /* MovementsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovementsViewController.xib; sourceTree = "<group>"; };
-		246CB2021F9D3D3100053F64 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
-		246CB2031F9D3D3100053F64 /* StockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockViewController.xib; sourceTree = "<group>"; };
-		246CB2061F9D4E4900053F64 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		246CB2081F9D4EAB00053F64 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		246CB20A1F9D58B100053F64 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
-		246CB20B1F9D58B100053F64 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
-		247D08A71FB799E000556699 /* ProductTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableHeaderView.xib; sourceTree = "<group>"; };
-		247D08A91FB7A0F800556699 /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
-		247D08AA1FB7A0F800556699 /* NewEntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewEntryViewController.xib; sourceTree = "<group>"; };
-		24B3F0BA1FB8F14A005FFA87 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		24B3F0BC1FB8F461005FFA87 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
-		24B3F0BD1FB8F461005FFA87 /* EntryTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryTableHeaderView.xib; sourceTree = "<group>"; };
-		24B3F0BE1FB8F461005FFA87 /* EntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryTableViewCell.xib; sourceTree = "<group>"; };
+		24B8A3CD1FB91707008CD788 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = StockeAR/Model/Entry.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3CE1FB91707008CD788 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = StockeAR/Model/Product.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3D11FB91715008CD788 /* ProductTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductTableHeaderView.xib; path = StockeAR/View/ProductTableHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3D21FB91715008CD788 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductTableViewCell.xib; path = StockeAR/View/ProductTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3D31FB91715008CD788 /* EntryTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EntryTableHeaderView.xib; path = StockeAR/View/EntryTableHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3D41FB91715008CD788 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryTableViewCell.swift; path = StockeAR/View/EntryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3D51FB91715008CD788 /* EntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EntryTableViewCell.xib; path = StockeAR/View/EntryTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3D61FB91715008CD788 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductTableViewCell.swift; path = StockeAR/View/ProductTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3DD1FB91722008CD788 /* NewEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewEntryViewController.xib; path = StockeAR/Controller/NewEntryViewController.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3DE1FB91722008CD788 /* MovementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovementsViewController.swift; path = StockeAR/Controller/MovementsViewController.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3DF1FB91722008CD788 /* EgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EgressViewController.xib; path = StockeAR/Controller/EgressViewController.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3E01FB91722008CD788 /* NewEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewEntryViewController.swift; path = StockeAR/Controller/NewEntryViewController.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3E11FB91722008CD788 /* StockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockViewController.swift; path = StockeAR/Controller/StockViewController.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3E21FB91723008CD788 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryViewController.swift; path = StockeAR/Controller/EntryViewController.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3E31FB91723008CD788 /* MovementsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovementsViewController.xib; path = StockeAR/Controller/MovementsViewController.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3E41FB91723008CD788 /* StockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StockViewController.xib; path = StockeAR/Controller/StockViewController.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3E51FB91723008CD788 /* EgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EgressViewController.swift; path = StockeAR/Controller/EgressViewController.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3E61FB91723008CD788 /* EntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EntryViewController.xib; path = StockeAR/Controller/EntryViewController.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3F21FB9175E008CD788 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = StockeAR/Helpers/DataSource.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3F41FB91885008CD788 /* EgressTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EgressTableHeaderView.xib; path = StockeAR/View/EgressTableHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3F51FB91885008CD788 /* MovementTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovementTableHeaderView.xib; path = StockeAR/View/MovementTableHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3F81FB91922008CD788 /* EgressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EgressTableViewCell.xib; path = StockeAR/View/EgressTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		24B8A3F91FB91922008CD788 /* EgressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EgressTableViewCell.swift; path = StockeAR/View/EgressTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3FC1FB91979008CD788 /* Egress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Egress.swift; path = StockeAR/Model/Egress.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3FE1FB91A0A008CD788 /* MovementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovementTableViewCell.swift; path = StockeAR/View/MovementTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		24B8A3FF1FB91A0A008CD788 /* MovementTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovementTableViewCell.xib; path = StockeAR/View/MovementTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		24B8A4021FB91A84008CD788 /* Movement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movement.swift; path = StockeAR/Model/Movement.swift; sourceTree = SOURCE_ROOT; };
 		24E8A6E41F79BA0C00280D55 /* StockeAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockeAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24E8A6E91F79BA0C00280D55 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24E8A6F11F79BA0C00280D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24E8A6F31F79BA0C00280D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24E8A6F91F79BA3F00280D55 /* EntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryViewController.xib; sourceTree = "<group>"; };
 		79BDB6F83ADCC7E754AA3F45 /* Pods-StockeAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockeAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR.release.xcconfig"; sourceTree = "<group>"; };
 		949A43B3E8EDB7824FF44138 /* Pods-StockeAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockeAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockeAR/Pods-StockeAR.debug.xcconfig"; sourceTree = "<group>"; };
 		E5745E3030221367F199E7DA /* Pods_StockeAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockeAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +90,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24B8A3CA1FB916D2008CD788 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24B8A3CD1FB91707008CD788 /* Entry.swift */,
+				24B8A3CE1FB91707008CD788 /* Product.swift */,
+				24B8A3FC1FB91979008CD788 /* Egress.swift */,
+				24B8A4021FB91A84008CD788 /* Movement.swift */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		24B8A3CB1FB916E0008CD788 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24B8A3D31FB91715008CD788 /* EntryTableHeaderView.xib */,
+				24B8A3D11FB91715008CD788 /* ProductTableHeaderView.xib */,
+				24B8A3F41FB91885008CD788 /* EgressTableHeaderView.xib */,
+				24B8A3F51FB91885008CD788 /* MovementTableHeaderView.xib */,
+				24B8A3D41FB91715008CD788 /* EntryTableViewCell.swift */,
+				24B8A3D51FB91715008CD788 /* EntryTableViewCell.xib */,
+				24B8A3D61FB91715008CD788 /* ProductTableViewCell.swift */,
+				24B8A3D21FB91715008CD788 /* ProductTableViewCell.xib */,
+				24B8A3F91FB91922008CD788 /* EgressTableViewCell.swift */,
+				24B8A3F81FB91922008CD788 /* EgressTableViewCell.xib */,
+				24B8A3FE1FB91A0A008CD788 /* MovementTableViewCell.swift */,
+				24B8A3FF1FB91A0A008CD788 /* MovementTableViewCell.xib */,
+			);
+			name = View;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		24B8A3CC1FB916E8008CD788 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24B8A3E51FB91723008CD788 /* EgressViewController.swift */,
+				24B8A3DF1FB91722008CD788 /* EgressViewController.xib */,
+				24B8A3E21FB91723008CD788 /* EntryViewController.swift */,
+				24B8A3E61FB91723008CD788 /* EntryViewController.xib */,
+				24B8A3DE1FB91722008CD788 /* MovementsViewController.swift */,
+				24B8A3E31FB91723008CD788 /* MovementsViewController.xib */,
+				24B8A3E01FB91722008CD788 /* NewEntryViewController.swift */,
+				24B8A3DD1FB91722008CD788 /* NewEntryViewController.xib */,
+				24B8A3E11FB91722008CD788 /* StockViewController.swift */,
+				24B8A3E41FB91723008CD788 /* StockViewController.xib */,
+			);
+			name = Controller;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		24B8A3F11FB91749008CD788 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				24B8A3F21FB9175E008CD788 /* DataSource.swift */,
+			);
+			name = Helpers;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		24E8A6DB1F79BA0C00280D55 = {
 			isa = PBXGroup;
 			children = (
@@ -95,26 +170,11 @@
 		24E8A6E61F79BA0C00280D55 /* StockeAR */ = {
 			isa = PBXGroup;
 			children = (
+				24B8A3CA1FB916D2008CD788 /* Model */,
+				24B8A3CB1FB916E0008CD788 /* View */,
+				24B8A3CC1FB916E8008CD788 /* Controller */,
+				24B8A3F11FB91749008CD788 /* Helpers */,
 				24E8A6E71F79BA0C00280D55 /* AppDelegate.swift */,
-				246CB2021F9D3D3100053F64 /* StockViewController.swift */,
-				246CB2031F9D3D3100053F64 /* StockViewController.xib */,
-				24E8A6E91F79BA0C00280D55 /* EntryViewController.swift */,
-				24E8A6F91F79BA3F00280D55 /* EntryViewController.xib */,
-				247D08A91FB7A0F800556699 /* NewEntryViewController.swift */,
-				247D08AA1FB7A0F800556699 /* NewEntryViewController.xib */,
-				246CB1FA1F9D3A0B00053F64 /* EgressViewController.swift */,
-				246CB1FB1F9D3A0B00053F64 /* EgressViewController.xib */,
-				246CB1FE1F9D3A3D00053F64 /* MovementsViewController.swift */,
-				246CB1FF1F9D3A3D00053F64 /* MovementsViewController.xib */,
-				246CB2061F9D4E4900053F64 /* DataSource.swift */,
-				246CB2081F9D4EAB00053F64 /* Product.swift */,
-				24B3F0BA1FB8F14A005FFA87 /* Entry.swift */,
-				246CB20A1F9D58B100053F64 /* ProductTableViewCell.swift */,
-				246CB20B1F9D58B100053F64 /* ProductTableViewCell.xib */,
-				247D08A71FB799E000556699 /* ProductTableHeaderView.xib */,
-				24B3F0BD1FB8F461005FFA87 /* EntryTableHeaderView.xib */,
-				24B3F0BC1FB8F461005FFA87 /* EntryTableViewCell.swift */,
-				24B3F0BE1FB8F461005FFA87 /* EntryTableViewCell.xib */,
 				24E8A6EE1F79BA0C00280D55 /* Assets.xcassets */,
 				24E8A6F01F79BA0C00280D55 /* LaunchScreen.storyboard */,
 				24E8A6F31F79BA0C00280D55 /* Info.plist */,
@@ -201,17 +261,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				247D08A81FB799E000556699 /* ProductTableHeaderView.xib in Resources */,
-				24B3F0C11FB8F461005FFA87 /* EntryTableViewCell.xib in Resources */,
-				246CB2011F9D3A3D00053F64 /* MovementsViewController.xib in Resources */,
-				246CB20D1F9D58B100053F64 /* ProductTableViewCell.xib in Resources */,
-				24B3F0C01FB8F461005FFA87 /* EntryTableHeaderView.xib in Resources */,
+				24B8A3FA1FB91922008CD788 /* EgressTableViewCell.xib in Resources */,
+				24B8A3ED1FB91723008CD788 /* MovementsViewController.xib in Resources */,
+				24B8A3D71FB91715008CD788 /* ProductTableHeaderView.xib in Resources */,
+				24B8A3E91FB91723008CD788 /* EgressViewController.xib in Resources */,
+				24B8A3F61FB91885008CD788 /* EgressTableHeaderView.xib in Resources */,
+				24B8A3D81FB91715008CD788 /* ProductTableViewCell.xib in Resources */,
+				24B8A3DB1FB91715008CD788 /* EntryTableViewCell.xib in Resources */,
 				24E8A6F21F79BA0C00280D55 /* LaunchScreen.storyboard in Resources */,
-				246CB1FD1F9D3A0B00053F64 /* EgressViewController.xib in Resources */,
-				24E8A6FA1F79BA3F00280D55 /* EntryViewController.xib in Resources */,
+				24B8A3F01FB91723008CD788 /* EntryViewController.xib in Resources */,
+				24B8A3D91FB91715008CD788 /* EntryTableHeaderView.xib in Resources */,
+				24B8A3F71FB91885008CD788 /* MovementTableHeaderView.xib in Resources */,
+				24B8A3E71FB91723008CD788 /* NewEntryViewController.xib in Resources */,
+				24B8A4011FB91A0A008CD788 /* MovementTableViewCell.xib in Resources */,
 				24E8A6EF1F79BA0C00280D55 /* Assets.xcassets in Resources */,
-				246CB2051F9D3D3100053F64 /* StockViewController.xib in Resources */,
-				247D08AC1FB7A0F800556699 /* NewEntryViewController.xib in Resources */,
+				24B8A3EE1FB91723008CD788 /* StockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,17 +344,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24B3F0BB1FB8F14A005FFA87 /* Entry.swift in Sources */,
-				246CB2071F9D4E4900053F64 /* DataSource.swift in Sources */,
-				247D08AB1FB7A0F800556699 /* NewEntryViewController.swift in Sources */,
-				246CB20C1F9D58B100053F64 /* ProductTableViewCell.swift in Sources */,
-				24E8A6EA1F79BA0C00280D55 /* EntryViewController.swift in Sources */,
-				246CB2001F9D3A3D00053F64 /* MovementsViewController.swift in Sources */,
-				246CB1FC1F9D3A0B00053F64 /* EgressViewController.swift in Sources */,
+				24B8A4001FB91A0A008CD788 /* MovementTableViewCell.swift in Sources */,
+				24B8A3DA1FB91715008CD788 /* EntryTableViewCell.swift in Sources */,
+				24B8A3FD1FB91979008CD788 /* Egress.swift in Sources */,
+				24B8A3CF1FB91707008CD788 /* Entry.swift in Sources */,
+				24B8A3DC1FB91715008CD788 /* ProductTableViewCell.swift in Sources */,
+				24B8A3EF1FB91723008CD788 /* EgressViewController.swift in Sources */,
+				24B8A3FB1FB91922008CD788 /* EgressTableViewCell.swift in Sources */,
+				24B8A3E81FB91723008CD788 /* MovementsViewController.swift in Sources */,
+				24B8A4031FB91A84008CD788 /* Movement.swift in Sources */,
 				24E8A6E81F79BA0C00280D55 /* AppDelegate.swift in Sources */,
-				246CB2041F9D3D3100053F64 /* StockViewController.swift in Sources */,
-				246CB2091F9D4EAB00053F64 /* Product.swift in Sources */,
-				24B3F0BF1FB8F461005FFA87 /* EntryTableViewCell.swift in Sources */,
+				24B8A3EC1FB91723008CD788 /* EntryViewController.swift in Sources */,
+				24B8A3EA1FB91723008CD788 /* NewEntryViewController.swift in Sources */,
+				24B8A3D01FB91707008CD788 /* Product.swift in Sources */,
+				24B8A3F31FB9175E008CD788 /* DataSource.swift in Sources */,
+				24B8A3EB1FB91723008CD788 /* StockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

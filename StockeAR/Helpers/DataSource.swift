@@ -7,6 +7,8 @@ final class DataSource: NSObject {
     static let shared = DataSource()
     static let stockApiUrl = "http://demo3346287.mockable.io/stock"
     static let entriesApiUrl = "http://demo3346287.mockable.io/entries"
+    static let egressesApiUrl = "http://demo3346287.mockable.io/egresses"
+    static let movementsApiUrl = "http://demo3346287.mockable.io/movements"
     static let newEntryApiUrl = "http://demo3346287.mockable.io/newentry"
     
     func getStock(completionHandler: @escaping (Array<Product>?, Error?) -> ()) {
@@ -62,6 +64,62 @@ final class DataSource: NSObject {
                             })
                             
                             completionHandler(entries, nil)
+        }
+    }
+    
+    func getEgresses(completionHandler: @escaping (Array<Egress>?, Error?) -> ()) {
+        let header = ["content-type" : "application/json"]
+        Alamofire.request(DataSource.egressesApiUrl,
+                          method: .get,
+                          parameters: nil,
+                          encoding: JSONEncoding.default,
+                          headers: header).responseJSON {
+                            response in
+                            
+                            guard response.result.isSuccess else {
+                                completionHandler(nil, response.result.error)
+                                return
+                            }
+                            
+                            guard let value = response.result.value as? [String: Any],
+                                let egressList = value["data"] as? [[String: Any]] else {
+                                    completionHandler(nil, response.result.error)
+                                    return
+                            }
+                            
+                            let egresses = egressList.flatMap({ (egressDict) -> Egress? in
+                                return Egress(jsonData: egressDict as [String : AnyObject])
+                            })
+                            
+                            completionHandler(egresses, nil)
+        }
+    }
+    
+    func getMovements(completionHandler: @escaping (Array<Movement>?, Error?) -> ()) {
+        let header = ["content-type" : "application/json"]
+        Alamofire.request(DataSource.movementsApiUrl,
+                          method: .get,
+                          parameters: nil,
+                          encoding: JSONEncoding.default,
+                          headers: header).responseJSON {
+                            response in
+                            
+                            guard response.result.isSuccess else {
+                                completionHandler(nil, response.result.error)
+                                return
+                            }
+                            
+                            guard let value = response.result.value as? [String: Any],
+                                let movementsList = value["data"] as? [[String: Any]] else {
+                                    completionHandler(nil, response.result.error)
+                                    return
+                            }
+                            
+                            let movements = movementsList.flatMap({ (movementDict) -> Movement? in
+                                return Movement(jsonData: movementDict as [String : AnyObject])
+                            })
+                            
+                            completionHandler(movements, nil)
         }
     }
     
