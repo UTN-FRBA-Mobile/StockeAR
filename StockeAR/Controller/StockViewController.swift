@@ -9,6 +9,7 @@ protocol SearchStockDelegate: NSObjectProtocol {
 
 class StockViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UNUserNotificationCenterDelegate {
     
+    @IBOutlet var topConstraint: NSLayoutConstraint!
     weak var delegate: SearchStockDelegate?
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
@@ -19,6 +20,9 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if shouldReturnProduct {
+            topConstraint.constant = 64
+        }
         self.navigationController?.isNavigationBarHidden = !shouldReturnProduct
         self.navigationController?.navigationBar.topItem?.title = ""
         let productCellNib = UINib(nibName: "ProductTableViewCell", bundle: nil)

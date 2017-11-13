@@ -55,8 +55,10 @@ class NewEntryViewController: UIViewController, QRCodeReaderDelegate, UIGestureR
             if let productCode = result {
                 self.productCodeTextField.text = productCode.components(separatedBy: ";")[0]
                 self.batchTextField.text = productCode.components(separatedBy: ";")[1]
-                self.expirationDateTextField.text = productCode.components(separatedBy: ";")[2]
-                
+                var date = productCode.components(separatedBy: ";")[2]
+                date.insert("/", at: date.index(date.startIndex, offsetBy: +2))
+                date.insert("/", at: date.index(date.startIndex, offsetBy: +5))
+                self.expirationDateTextField.text = date
             }
         }
         self.present(qrCodeReaderVC, animated: true, completion: nil)

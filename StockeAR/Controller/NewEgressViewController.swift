@@ -1,5 +1,4 @@
 import UIKit
-import SVProgressHUD
 import QRCodeReaderViewController
 
 class NewEgressViewController: UIViewController, UIScrollViewDelegate, SearchStockDelegate, QRCodeReaderDelegate, UIGestureRecognizerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -99,6 +98,10 @@ class NewEgressViewController: UIViewController, UIScrollViewDelegate, SearchSto
     func reader(_ reader: QRCodeReaderViewController!, didScanResult result: String!) {
         self.dismiss(animated: true) {
         }
+    }
+    
+    func readerDidCancel(_ reader: QRCodeReaderViewController!) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func searchProduct(_ sender: Any) {
