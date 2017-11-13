@@ -20,6 +20,7 @@ class NewEntryViewController: UIViewController, QRCodeReaderDelegate, UIGestureR
         super.viewDidLoad()
         setupProviderLabel()
         getProviders()
+        self.navigationController?.navigationBar.topItem?.title = ""
     }
     
     func getProviders() {

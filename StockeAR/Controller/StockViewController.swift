@@ -19,7 +19,8 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = !shouldReturnProduct
+        self.navigationController?.navigationBar.topItem?.title = ""
         let productCellNib = UINib(nibName: "ProductTableViewCell", bundle: nil)
         tableView.register(productCellNib, forCellReuseIdentifier: cellReuseIdentifier)
         loadStock()
@@ -39,7 +40,7 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let notification = UNMutableNotificationContent()
             notification.title = "StockAR"
             notification.body = "Nueva alta"
-            let notificationTrigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 3.0, repeats: false)
+            let notificationTrigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 5.0, repeats: false)
             
             let request = UNNotificationRequest(identifier: "alta", content: notification, trigger: notificationTrigger)
             UNUserNotificationCenter.current().delegate = self

@@ -32,7 +32,10 @@ class NewEgressViewController: UIViewController, UIScrollViewDelegate, SearchSto
         super.viewDidLoad()
         setupNewLocationLabel()
         setupView()
-        getClients()
+        if !isLocal {
+            getClients()
+        }
+        self.navigationController?.navigationBar.topItem?.title = ""
     }
     
     func setupView() {
