@@ -10,6 +10,8 @@ final class DataSource: NSObject {
     static let egressesApiUrl = "http://demo3346287.mockable.io/egresses"
     static let movementsApiUrl = "http://demo3346287.mockable.io/movements"
     static let newEntryApiUrl = "http://demo3346287.mockable.io/newentry"
+    static let newEgressApiUrl = "http://demo3346287.mockable.io/newegress"
+    static let newMovementApiUrl = "http://demo3346287.mockable.io/newmovement"
     
     func getStock(completionHandler: @escaping (Array<Product>?, Error?) -> ()) {
         let header = ["content-type" : "application/json"]
@@ -123,7 +125,7 @@ final class DataSource: NSObject {
         }
     }
     
-    func newEntry(product: Product, provider: String, completionHandler: @escaping (Error?) -> ()) {
+    func newEntry(product: Product, provider: String, completionHandler: @escaping (Int?) -> ()) {
         let header = ["content-type" : "application/json"]
         let parameters = ["id":product.productId, "batch":product.batch, "expiration_date":product.expirationDate, "amount":product.amount, "unit":product.unit, "location":product.location, "provider":provider]
         Alamofire.request(DataSource.newEntryApiUrl,
@@ -133,8 +135,8 @@ final class DataSource: NSObject {
                           headers: header).responseJSON {
                             response in
                             
-                            guard response.result.isSuccess else {
-                                completionHandler(response.result.error)
+                            guard response.response?.statusCode == 200 else {
+                                completionHandler(response.response?.statusCode)
                                 return
                             }
                             
@@ -142,18 +144,18 @@ final class DataSource: NSObject {
         }
     }
     
-    func newMovement(product: Product, amount: String, newLocation: String, completionHandler: @escaping (Error?) -> ()) {
+    func newMovement(product: Product, amount: String, newLocation: String, completionHandler: @escaping (Int?) -> ()) {
         let header = ["content-type" : "application/json"]
         let parameters = ["id":product.productId, "batch":product.batch, "amount":amount, "new_location":newLocation]
-        Alamofire.request(DataSource.newEntryApiUrl,
+        Alamofire.request(DataSource.newMovementApiUrl,
                           method: .post,
                           parameters: parameters,
                           encoding: JSONEncoding.default,
                           headers: header).responseJSON {
                             response in
                             
-                            guard response.result.isSuccess else {
-                                completionHandler(response.result.error)
+                            guard response.response?.statusCode == 200 else {
+                                completionHandler(response.response?.statusCode)
                                 return
                             }
                             
@@ -161,18 +163,18 @@ final class DataSource: NSObject {
         }
     }
     
-    func newEgress(product: Product, amount: String, client: String, completionHandler: @escaping (Error?) -> ()) {
+    func newEgress(product: Product, amount: String, client: String, completionHandler: @escaping (Int?) -> ()) {
         let header = ["content-type" : "application/json"]
         let parameters = ["id":product.productId, "batch":product.batch, "amount":amount, "client":client]
-        Alamofire.request(DataSource.newEntryApiUrl,
+        Alamofire.request(DataSource.newEgressApiUrl,
                           method: .post,
                           parameters: parameters,
                           encoding: JSONEncoding.default,
                           headers: header).responseJSON {
                             response in
                             
-                            guard response.result.isSuccess else {
-                                completionHandler(response.result.error)
+                            guard response.response?.statusCode == 200 else {
+                                completionHandler(response.response?.statusCode)
                                 return
                             }
                             

@@ -79,9 +79,9 @@ class NewEntryViewController: UIViewController, QRCodeReaderDelegate, UIGestureR
         if checkForm() {
             SVProgressHUD.show()
             let product = Product(productId: productCodeTextField.text!, amount: amountTextField.text!, batch: batchTextField.text!, unit: unitTextField.text!, location: locationTextField.text!, expirationDate: expirationDateTextField.text!)
-            DataSource.shared.newEntry(product: product!, provider: providerLabel.text!) { (error) in
+            DataSource.shared.newEntry(product: product!, provider: providerLabel.text!) { (statusCode) in
                 SVProgressHUD.dismiss()
-                if (error != nil) {
+                if (statusCode != nil) {
                     UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
                 }
                 else {

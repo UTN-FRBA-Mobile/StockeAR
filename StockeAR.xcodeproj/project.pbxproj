@@ -148,8 +148,7 @@
 			children = (
 				24B8A3F21FB9175E008CD788 /* DataSource.swift */,
 			);
-			name = Helpers;
-			path = "New Group";
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		24E8A6DB1F79BA0C00280D55 = {

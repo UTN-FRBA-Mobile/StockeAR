@@ -111,8 +111,8 @@ class NewEgressViewController: UIViewController, UIScrollViewDelegate, SearchSto
         }
         let product = Product(productId: productLabel.text!, amount: amountTextField.text!, batch: batchTextField.text!, unit: unit, location: "", expirationDate: "")
         if isLocal {
-            DataSource.shared.newMovement(product: product!, amount: amountTextField.text!, newLocation: newLocationLabel.text!, completionHandler: { (error) in
-                if (error != nil) {
+            DataSource.shared.newMovement(product: product!, amount: amountTextField.text!, newLocation: newLocationLabel.text!, completionHandler: { (statusCode) in
+                if (statusCode != nil) {
                     UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
                 }
                 else {
@@ -122,8 +122,8 @@ class NewEgressViewController: UIViewController, UIScrollViewDelegate, SearchSto
             })
         }
         else {
-            DataSource.shared.newEgress(product: product!, amount: amountTextField.text!, client: newLocationLabel.text!, completionHandler: { (error) in
-                if (error != nil) {
+            DataSource.shared.newEgress(product: product!, amount: amountTextField.text!, client: newLocationLabel.text!, completionHandler: { (statusCode) in
+                if (statusCode != nil) {
                     UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
                 }
                 else {
