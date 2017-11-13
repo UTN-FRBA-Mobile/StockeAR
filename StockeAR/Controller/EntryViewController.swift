@@ -12,7 +12,6 @@ class EntryViewController: UIViewController, UITableViewDelegate, UITableViewDat
         addRightButton()
         let entryCellNib = UINib(nibName: "EntryTableViewCell", bundle: nil)
         tableView.register(entryCellNib, forCellReuseIdentifier: cellReuseIdentifier)
-        SVProgressHUD.show()
         loadEntries()
         loadHeader()
         addPullToRefresh()
@@ -27,6 +26,7 @@ class EntryViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func loadEntries() {
+        SVProgressHUD.show()
         DataSource.shared.getEntries { (entries, error) in
             SVProgressHUD.dismiss()
             if let entriesList = entries {

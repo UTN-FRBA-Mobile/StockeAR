@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,43 +16,50 @@
             <rect key="frame" x="0.0" y="0.0" width="383" height="47"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Código" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgr-JS-Zkb">
-                    <rect key="frame" x="11" y="10" width="64" height="28"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Código" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgr-JS-Zkb">
+                    <rect key="frame" x="10" y="14" width="58.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cant." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRG-D2-sh7">
-                    <rect key="frame" x="145" y="10" width="67" height="28"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cant." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRG-D2-sh7">
+                    <rect key="frame" x="151" y="14" width="44.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Do3-ma-AcQ">
-                    <rect key="frame" x="213" y="10" width="66" height="28"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Do3-ma-AcQ">
+                    <rect key="frame" x="211" y="14" width="58.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoZ-Ku-r12">
-                    <rect key="frame" x="90" y="10" width="45" height="28"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoZ-Ku-r12">
+                    <rect key="frame" x="88.5" y="14" width="36" height="20.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ubicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbh-70-Bb5">
-                    <rect key="frame" x="283" y="10" width="82" height="28"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubicación" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbh-70-Bb5">
+                    <rect key="frame" x="285.5" y="14" width="82" height="20.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pgr-JS-Zkb" firstAttribute="centerY" secondItem="May-TJ-VG3" secondAttribute="centerY" id="8yL-Ag-pkd"/>
+                <constraint firstItem="Pgr-JS-Zkb" firstAttribute="centerX" secondItem="May-TJ-VG3" secondAttribute="centerX" multiplier="0.2" constant="1" id="9w5-dv-lcf"/>
+                <constraint firstItem="yRG-D2-sh7" firstAttribute="centerX" secondItem="May-TJ-VG3" secondAttribute="centerX" multiplier="0.9" constant="1" id="Blm-Wq-hEP"/>
+                <constraint firstItem="Do3-ma-AcQ" firstAttribute="centerY" secondItem="May-TJ-VG3" secondAttribute="centerY" id="CB4-0T-Y0H"/>
+                <constraint firstItem="yRG-D2-sh7" firstAttribute="centerY" secondItem="May-TJ-VG3" secondAttribute="centerY" id="FuD-Op-Sep"/>
+                <constraint firstItem="Do3-ma-AcQ" firstAttribute="centerX" secondItem="May-TJ-VG3" secondAttribute="centerX" multiplier="1.25" constant="1" id="Nnf-fA-067"/>
+                <constraint firstItem="xoZ-Ku-r12" firstAttribute="centerY" secondItem="May-TJ-VG3" secondAttribute="centerY" id="Wid-Y1-OH4"/>
+                <constraint firstItem="sbh-70-Bb5" firstAttribute="centerX" secondItem="May-TJ-VG3" secondAttribute="centerX" multiplier="1.7" constant="1" id="egD-b4-C6E"/>
+                <constraint firstItem="xoZ-Ku-r12" firstAttribute="centerX" secondItem="May-TJ-VG3" secondAttribute="centerX" multiplier="0.55" constant="1" id="iO1-bO-NHf"/>
+                <constraint firstItem="sbh-70-Bb5" firstAttribute="centerY" secondItem="May-TJ-VG3" secondAttribute="centerY" id="tnG-0M-Sct"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-254.5" y="42.5"/>
         </view>

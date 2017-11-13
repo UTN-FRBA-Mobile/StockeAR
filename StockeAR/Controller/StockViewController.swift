@@ -21,7 +21,6 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.navigationController?.isNavigationBarHidden = true
         let productCellNib = UINib(nibName: "ProductTableViewCell", bundle: nil)
         tableView.register(productCellNib, forCellReuseIdentifier: cellReuseIdentifier)
-        SVProgressHUD.show()
         loadStock()
         loadHeader()
         addPullToRefresh()
@@ -36,6 +35,7 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
     func loadStock() {
+        SVProgressHUD.show()
         DataSource.shared.getStock { (products, error) in
             SVProgressHUD.dismiss()
             if let productList = products {
@@ -122,7 +122,7 @@ class StockViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if searchText == "" {
             reloadData(products: products)
         } else {
-            let filtered = products.filter { $0.productId == searchText }
+            let filtered = products.filter { $0.productId.contains(searchText) }
             reloadData(products: filtered)
         }
     }

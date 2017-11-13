@@ -71,12 +71,13 @@ class NewEgressViewController: UIViewController, UIScrollViewDelegate, SearchSto
         newLocationLabel.layer.cornerRadius = 4
     }
     
-    @IBAction func dismissKeyboard() {
+    func dismissKeyboard() {
         amountTextField.resignFirstResponder()
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         dismissKeyboard()
+        picker.isHidden = true
     }
 
     @IBAction func scanNewLocation(_ sender: Any) {

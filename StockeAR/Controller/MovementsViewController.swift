@@ -12,7 +12,6 @@ class MovementsViewController: UIViewController, UITableViewDataSource, UITableV
         addRightButton()
         let movementCellNib = UINib(nibName: "MovementTableViewCell", bundle: nil)
         tableView.register(movementCellNib, forCellReuseIdentifier: cellReuseIdentifier)
-        SVProgressHUD.show()
         loadMovements()
         loadHeader()
         addPullToRefresh()
@@ -27,6 +26,7 @@ class MovementsViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func loadMovements() {
+        SVProgressHUD.show()
         DataSource.shared.getMovements { (movements, error) in
             SVProgressHUD.dismiss()
             if let movementsList = movements {

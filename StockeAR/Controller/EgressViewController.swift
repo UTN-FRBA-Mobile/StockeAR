@@ -12,7 +12,6 @@ class EgressViewController: UIViewController, UITableViewDataSource, UITableView
         addRightButton()
         let egressCellNib = UINib(nibName: "EgressTableViewCell", bundle: nil)
         tableView.register(egressCellNib, forCellReuseIdentifier: cellReuseIdentifier)
-        SVProgressHUD.show()
         loadEgresses()
         loadHeader()
         addPullToRefresh()
@@ -27,6 +26,7 @@ class EgressViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func loadEgresses() {
+        SVProgressHUD.show()
         DataSource.shared.getEgresses { (egresses, error) in
             SVProgressHUD.dismiss()
             if let egressesList = egresses {
