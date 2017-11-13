@@ -12,6 +12,8 @@ final class DataSource: NSObject {
     static let newEntryApiUrl = "http://demo3346287.mockable.io/newentry"
     static let newEgressApiUrl = "http://demo3346287.mockable.io/newegress"
     static let newMovementApiUrl = "http://demo3346287.mockable.io/newmovement"
+    static let clientsApiUrl = "http://demo3346287.mockable.io/clients"
+    static let providersApiUrl = "http://demo3346287.mockable.io/providers"
     
     func getStock(completionHandler: @escaping (Array<Product>?, Error?) -> ()) {
         let header = ["content-type" : "application/json"]
@@ -122,6 +124,54 @@ final class DataSource: NSObject {
                             })
                             
                             completionHandler(movements, nil)
+        }
+    }
+    
+    func getProviders(completionHandler: @escaping (Array<String>?, Int?) -> ()) {
+        let header = ["content-type" : "application/json"]
+        Alamofire.request(DataSource.providersApiUrl,
+                          method: .get,
+                          parameters: nil,
+                          encoding: JSONEncoding.default,
+                          headers: header).responseJSON {
+                            response in
+                            
+                            guard response.response?.statusCode == 200 else {
+                                completionHandler(nil, response.response?.statusCode)
+                                return
+                            }
+                            
+                            guard let value = response.result.value as? [String: Any],
+                                let providers = value["data"] as? [String] else {
+                                    completionHandler(nil, response.response?.statusCode)
+                                    return
+                            }
+                            
+                            completionHandler(providers, nil)
+        }
+    }
+    
+    func getClients(completionHandler: @escaping (Array<String>?, Int?) -> ()) {
+        let header = ["content-type" : "application/json"]
+        Alamofire.request(DataSource.clientsApiUrl,
+                          method: .get,
+                          parameters: nil,
+                          encoding: JSONEncoding.default,
+                          headers: header).responseJSON {
+                            response in
+                            
+                            guard response.response?.statusCode == 200 else {
+                                completionHandler(nil, response.response?.statusCode)
+                                return
+                            }
+                            
+                            guard let value = response.result.value as? [String: Any],
+                                let clients = value["data"] as? [String] else {
+                                    completionHandler(nil, response.response?.statusCode)
+                                    return
+                            }
+                            
+                            completionHandler(clients, nil)
         }
     }
     

@@ -14,11 +14,25 @@ class NewEntryViewController: UIViewController, QRCodeReaderDelegate, UIGestureR
     @IBOutlet var productCodeTextField: UITextField!
     @IBOutlet var providerLabel: UILabel!
     var entries: Array<Entry> = []
-    var providers: Array<String> = ["Alpha1","Alpha2","Alpha3"]
+    var providers: Array<String> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupProviderLabel()
+        getProviders()
+    }
+    
+    func getProviders() {
+        DataSource.shared.getProviders { (providers, statusCode) in
+            if let providersList = providers {
+                self.providers = providersList
+                self.picker.reloadAllComponents()
+            }
+            else {
+                UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
 
     func setupProviderLabel() {

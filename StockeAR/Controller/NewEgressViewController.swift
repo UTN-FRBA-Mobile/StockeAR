@@ -13,7 +13,7 @@ class NewEgressViewController: UIViewController, UIScrollViewDelegate, SearchSto
     @IBOutlet var amountTextField: UITextField!
     @IBOutlet var newLocationLabel: UILabel!
     @IBOutlet var scanButton: UIButton!
-    var clients: Array<String> = ["Alpha1","Alpha2","Alpha3"]
+    var clients: Array<String> = []
     
     var maxAmount: Int = 0
     var unit: String = ""
@@ -32,6 +32,7 @@ class NewEgressViewController: UIViewController, UIScrollViewDelegate, SearchSto
         super.viewDidLoad()
         setupNewLocationLabel()
         setupView()
+        getClients()
     }
     
     func setupView() {
@@ -42,6 +43,19 @@ class NewEgressViewController: UIViewController, UIScrollViewDelegate, SearchSto
             scanButton.isHidden = true
             addTapGesture()
             newLocationTitleLabel.text = "Cliente"
+        }
+    }
+    
+    func getClients() {
+        DataSource.shared.getClients { (clients, statusCode) in
+            if let clientsList = clients {
+                self.clients = clientsList
+                self.picker.reloadAllComponents()
+            }
+            else {
+                UIAlertView(title: "Error", message: "Hubo un error en el servidor, intentá de nuevo.", delegate: nil, cancelButtonTitle: "OK").show()
+                self.navigationController?.popViewController(animated: true)
+            }
         }
     }
     
