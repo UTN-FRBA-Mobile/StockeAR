@@ -4,17 +4,17 @@
 
 <h2>Features</h2>
 <P>
-&emsp;&bull;&ensp; Visualizar el stock actual y realizar búsquedas de los productos.<BR>
-&emsp;&bull;&ensp;   Ingresar productos usando la cámara de fotos como scanner para códigos QR.<BR>
-&emsp;&bull;&ensp;   Asignar la ubicacion de los ingresos usando el código de barras de la ubicación.<BR>
-&emsp;&bull;&ensp;   Realizar egresos buscando el producto para conocer la ubicación.<BR>
-&emsp;&bull;&ensp;   Reubicar productos dentro del depósito bucando por código.<BR>
-&emsp;&bull;&ensp;   Asignar la nueva posición usando el código de barras de la ubicación.<BR>
+&emsp;&bull;&ensp;  Visualizar el stock actual y realizar búsquedas de los productos.<BR>
+&emsp;&bull;&ensp;  Ingresar mercaderia usando la cámara de fotos como scanner para códigos QR.<BR>
+&emsp;&bull;&ensp;  Asignar la ubicacion de la mercadería ingresada usando el código de barras de la ubicación.<BR>
+&emsp;&bull;&ensp;  Realizar búsquedas de mercadería para realizar los egresos y conocer la ubicación.<BR>
+&emsp;&bull;&ensp;  Reubicar productos dentro del depósito bucando por código.<BR>
+&emsp;&bull;&ensp;  Asignar la nueva posición usando el código de barras de la ubicación.<BR>
 </P>
 
 
 
-<h2>Producto</h2>
+<h2>Mercadería</h2>
 
 
 <img src=Images/producto1.png width=260/>
@@ -38,12 +38,22 @@ Aquí se pueden buscar los productos en stock.
 <BR>
 
 <h2>Ingresos</h2>
-Aquí se pueden ingresar la mercadería entrante al stock.
-<img src=Images/ingrso1.png width=260/>
+Aquí se puede ingresar la mercadería entrante al stock.
+<img src=Images/ingreso1.png width=260/>
 <BR>
 
 <img src=Images/ingreso2.png width=260/>
 <BR>
 <img src=Images/scanqr.png width=260/>
+<BR>
+  
+<h2>Egresos</h2>
+Aquí se puede dar egreso a la mercadería saliente al stock.
+<img src=Images/egreso1.png width=260/>
+<BR>
+
+<img src=Images/egreso2.png width=260/>
+<BR>
+<img src=Images/scan1d.png width=260/>
 <BR>
 
