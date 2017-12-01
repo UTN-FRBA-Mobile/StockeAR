@@ -28,7 +28,7 @@
 
 <img src=Images/deposito1.png width=260/>
 <BR>
-<img src=Images/deposito1.png width=260/>
+<img src=Images/deposito2.png width=260/>
 <BR>
 
 
@@ -38,13 +38,15 @@ Aquí se pueden buscar los productos en stock.
 <BR>
 
 <h2>Ingresos</h2>
-Aquí se puede ingresar la mercadería entrante al stock.
+Aquí se puede ingresar la mercadería entrante del stock.
 <img src=Images/ingreso1.png width=260/>
 <BR>
 
 <img src=Images/ingreso2.png width=260/>
 <BR>
 <img src=Images/scanqr.png width=260/>
+<BR>
+<img src=Images/scan1d.png width=260/>
 <BR>
   
 <h2>Egresos</h2>
@@ -54,6 +56,6 @@ Aquí se puede dar egreso a la mercadería saliente al stock.
 
 <img src=Images/egreso2.png width=260/>
 <BR>
-<img src=Images/scan1d.png width=260/>
+<img src=Images/egreso3.png width=260/>
 <BR>
 
