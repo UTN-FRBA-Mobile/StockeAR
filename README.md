@@ -5,17 +5,17 @@
 <h2>Features</h2>
 <P>
 &emsp;&bull;&ensp;  Visualizar el stock actual y realizar búsquedas de los productos.<BR>
-&emsp;&bull;&ensp;  Ingresar mercaderia usando la cámara de fotos como scanner para códigos QR.<BR>
-&emsp;&bull;&ensp;  Asignar la ubicacion de la mercadería ingresada usando el código de barras de la ubicación.<BR>
-&emsp;&bull;&ensp;  Realizar búsquedas de mercadería para realizar los egresos y conocer la ubicación.<BR>
-&emsp;&bull;&ensp;  Reubicar productos dentro del depósito bucando por código.<BR>
+&emsp;&bull;&ensp;  Ingresar mercadería usando la cámara de fotos como scanner para códigos QR.<BR>
+&emsp;&bull;&ensp;  Asignar la ubicación de la mercadería ingresada usando el código de barras de la ubicación.<BR>
+&emsp;&bull;&ensp;  Realizar búsquedas de mercadería para conocer la ubicación y facilitar los egresos.<BR>
+&emsp;&bull;&ensp;  Reubicar productos dentro del mismo depósito bucando por código de producto.<BR>
 &emsp;&bull;&ensp;  Asignar la nueva posición usando el código de barras de la ubicación.<BR>
 </P>
 
 
 
 <h2>Mercadería</h2>
-
+Así llega la mercadería.<BR>
 
 <img src=Images/producto1.png width=260/>
 <BR>
@@ -25,7 +25,7 @@
 <BR>
 
 <h2>Depósito</h2>
-
+Así es el depósito.<BR>
 <img src=Images/deposito1.png width=260/>
 <BR>
 <img src=Images/deposito2.png width=260/>
@@ -33,12 +33,12 @@
 
 
 <h2>Stock</h2>
-Aquí se pueden buscar los productos en stock.
+Aquí se pueden buscar los productos en el stock.<BR>
 <img src=Images/stock1.png width=260/>
 <BR>
 
 <h2>Ingresos</h2>
-Aquí se puede ingresar la mercadería entrante del stock.
+Aquí se puede dar ingreso a la mercadería entrante del stock.<BR>
 <img src=Images/ingreso1.png width=260/>
 <BR>
 
@@ -50,7 +50,7 @@ Aquí se puede ingresar la mercadería entrante del stock.
 <BR>
   
 <h2>Egresos</h2>
-Aquí se puede dar egreso a la mercadería saliente al stock.
+Aquí se puede dar egreso a la mercadería saliente al stock.<BR>
 <img src=Images/egreso1.png width=260/>
 <BR>
 
@@ -60,7 +60,7 @@ Aquí se puede dar egreso a la mercadería saliente al stock.
 <BR>
 
 <h2>Movimiento</h2>
-Aquí se puede cambiar la ubicación de la mercadería dentro del mismo depósito.
+Aquí se puede cambiar la ubicación de la mercadería dentro del mismo depósito.<BR>
 <img src=Images/movimiento1.png width=260/>
 <BR>
 
