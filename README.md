@@ -56,6 +56,17 @@ Aquí se puede dar egreso a la mercadería saliente al stock.
 
 <img src=Images/egreso2.png width=260/>
 <BR>
-<img src=Images/egreso3.png width=260/>
+<img src=Images/buscar1.png width=260/>
 <BR>
 
+<h2>Movimiento</h2>
+Aquí se puede cambiar la ubicación de la mercadería dentro del mismo depósito.
+<img src=Images/movimiento1.png width=260/>
+<BR>
+
+<img src=Images/movimiento2.png width=260/>
+<BR>
+<img src=Images/buscar1.png width=260/>
+<BR>
+<img src=Images/scan1d.png width=260/>
+<BR>
