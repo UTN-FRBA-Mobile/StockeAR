@@ -19,29 +19,31 @@
 
 <img src=Images/producto1.png width=260/>
 <BR>
-![Alt text](Images/IMG_7138.png)
+<img src=Images/producto2.png width=260/>
 <BR>
-![Alt text](Images/IMG_6972.png)
+<img src=Images/producto3.png width=260/>
 <BR>
-
 
 <h2>Depósito</h2>
 
-![Alt text](Images/IMG_7135.png)
+<img src=Images/deposito1.png width=260/>
 <BR>
-![Alt text](Images/IMG_7136.png)
+<img src=Images/deposito1.png width=260/>
 <BR>
 
 
 <h2>Stock</h2>
 Aquí se pueden buscar los productos en stock.
-![Alt text](Images/IMG_7439.png)
-<BR>
-![Alt text](Images/IMG_7440.png)
+<img src=Images/stock1.png width=260/>
 <BR>
 
 <h2>Ingresos</h2>
 Aquí se pueden ingresar la mercadería entrante al stock.
-![Alt text](Images/IMG_7136.png)
+<img src=Images/ingrso1.png width=260/>
 <BR>
-![Alt text](Images/IMG_7136.png)
+
+<img src=Images/ingreso2.png width=260/>
+<BR>
+<img src=Images/scanqr.png width=260/>
+<BR>
+
