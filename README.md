@@ -15,7 +15,8 @@
 
 
 <h2>Mercadería</h2>
-Así llega la mercadería.<BR>
+<P>Así llega la mercadería.</P>
+
 
 <img src=Images/producto1.png width=260/>
 <BR>
@@ -25,7 +26,7 @@ Así llega la mercadería.<BR>
 <BR>
 
 <h2>Depósito</h2>
-Así es el depósito.<BR>
+<P>Así es el depósito.</P>
 <img src=Images/deposito1.png width=260/>
 <BR>
 <img src=Images/deposito2.png width=260/>
@@ -33,12 +34,12 @@ Así es el depósito.<BR>
 
 
 <h2>Stock</h2>
-Aquí se pueden buscar los productos en el stock.<BR>
+<P>Aquí se pueden buscar los productos en el stock.</P>
 <img src=Images/stock1.png width=260/>
 <BR>
 
 <h2>Ingresos</h2>
-Aquí se puede dar ingreso a la mercadería entrante del stock.<BR>
+<P>Aquí se puede dar ingreso a la mercadería entrante del stock.</P>
 <img src=Images/ingreso1.png width=260/>
 <BR>
 
@@ -50,7 +51,7 @@ Aquí se puede dar ingreso a la mercadería entrante del stock.<BR>
 <BR>
   
 <h2>Egresos</h2>
-Aquí se puede dar egreso a la mercadería saliente al stock.<BR>
+<P>Aquí se puede dar egreso a la mercadería saliente del stock.</P>
 <img src=Images/egreso1.png width=260/>
 <BR>
 
@@ -60,7 +61,7 @@ Aquí se puede dar egreso a la mercadería saliente al stock.<BR>
 <BR>
 
 <h2>Movimiento</h2>
-Aquí se puede cambiar la ubicación de la mercadería dentro del mismo depósito.<BR>
+<P>Aquí se puede cambiar la ubicación de la mercadería dentro del mismo depósito.</P>
 <img src=Images/movimiento1.png width=260/>
 <BR>
 
